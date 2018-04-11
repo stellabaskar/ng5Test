@@ -1,12 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ServiceWorkerModule } from "@angular/service-worker";
-import { MatButtonModule, MatIconModule, MatInputModule, MatSelectModule, MatSliderModule,
-         MatToolbarModule, MatCardModule, MatSlideToggleModule,
-         MatSnackBarModule} from "@angular/material";
-import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import 'hammerjs';
+
+//import { MatButtonModule, MatIconModule, MatInputModule, MatSelectModule, MatSliderModule,
+//         MatToolbarModule, MatCardModule, MatSlideToggleModule,
+//         MatSnackBarModule} from "@angular/material";
+//import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+//import 'hammerjs';
 
 
 
@@ -286,17 +286,18 @@ const appRoutes: Routes =[
   ],
   imports: [
     BrowserModule,
-     RouterModule.forRoot(appRoutes),
-     MatSnackBarModule,
-      MatButtonModule, 
-      MatIconModule, 
-      MatInputModule, 
-      MatSelectModule, 
-      MatSliderModule,
-      MatToolbarModule, 
-      MatCardModule,
-     MatSlideToggleModule,
-     BrowserAnimationsModule
+    RouterModule.forRoot(appRoutes)
+  
+     //MatSnackBarModule,
+     // MatButtonModule, 
+     // MatIconModule, 
+     // MatInputModule, 
+     // MatSelectModule, 
+     // MatSliderModule,
+     // MatToolbarModule, 
+     // MatCardModule,
+     //MatSlideToggleModule,
+     //BrowserAnimationsModule
      
   ],
   providers: [],

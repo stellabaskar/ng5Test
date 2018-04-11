@@ -7,10 +7,10 @@
     {
       "root": "src",
       "outDir": "dist",
-   "serviceWorker" : "true",
+   
       "assets": [
         "assets",
-        "manifest.json",
+        "ngsw-manifest.json",
         "icons"
       ],
       "index": "index.html",
