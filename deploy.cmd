@@ -94,12 +94,16 @@ echo Handling node.js deployment.
 call :SelectNodeVersion
 
 :: 2. Install npm packages
+echo "%DEPLOYMENT_TARGET%"
 IF EXIST "%DEPLOYMENT_TARGET%\package.json" (
   pushd "%DEPLOYMENT_TARGET%"
   call :ExecuteCmd !NPM_CMD! install --production
   IF !ERRORLEVEL! NEQ 0 goto error
   popd
 )
+
+echo "%DEPLOYMENT_SOURCE%/.angular-cli.json"
+
 :: 3. Angular Prod Build
 IF EXIST "%DEPLOYMENT_SOURCE%/.angular-cli.json" (
 echo Building App in %DEPLOYMENT_SOURCE%…
