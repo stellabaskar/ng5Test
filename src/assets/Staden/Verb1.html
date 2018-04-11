@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html >
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Staden</title>
+    <script src="../../assets/dom-extensions.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="../../assets/app.min.css">
+    <link rel="stylesheet" type="text/css" href="9/9.min.css">
+</head>
+
+<body>
+    <div id="hide"></div>
+    <div id="left">
+        <div id="leftNav">
+            <div id="btnThumbnails" onclick="IDRViewer.toggleOutlines(false)" title="Thumbnails" class="navBtn inactive"></div>
+            <div id="btnOutlines" onclick="IDRViewer.toggleOutlines(true)" title="Bookmarks" class="navBtn inactive"></div>
+        </div>
+        <div id="leftContent">
+            <!-- <div id="thumbnailPanel"></div> -->
+            <div id="outlinePanel"></div>
+        </div>
+    </div>
+    <div id="main">
+        <div id="mainNav">
+            <div id="btnSideToggle" onclick="IDRViewer.toggleThumbnails();" class="navBtn">
+                <div title="Sidebar"></div>
+            </div>
+            <div id="btnPrev" title="Previous Page" onclick="IDRViewer.prev()" class="navBtn"></div>
+            <select id="goBtn" onchange="IDRViewer.goToPage(0)">
+            </select>
+            <span id="pgCount"></span>
+            <div id="btnNext" title="Next Page" onclick="IDRViewer.next()" class="navBtn"></div>
+            <div id="btnSelect" title="Select" onclick="IDRViewer.setSelectMode(0)" class="navBtn"></div>
+            <div id="btnMove" title="Pan" onclick="IDRViewer.setSelectMode(1)" class="navBtn"></div>
+            <div id="btnZoomOut" title="Zoom Out" onclick="IDRViewer.zoomOut()" class="navBtn"></div>
+            <select id="zoomBtn" onchange="IDRViewer.zoomUpdate()">
+                <option value="0">100%</option>
+                <option value="1">Actual Size</option>
+                <option value="2">Fit Width</option>
+                <option value="3">Fit Height</option>
+                <option value="4">Fit Page</option>
+                <option value="5">Automatic</option>
+            </select>
+            <div id="btnZoomIn" title="Zoom In" onclick="IDRViewer.zoomIn()" class="navBtn"></div>
+            <div id="btnFullscreen" title="Fullscreen" onclick="IDRViewer.toggleFullScreen();" class="navBtn closed"></div>
+        </div>
+        <div id="mainContent">
+            <div id="contentContainer">
+                <div id="jpedal" style="position:relative; width: 1125px; height: 1125px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+                    <div id="t1_9" class="t s1_9">STADEN</div>
+                    <div id="t2_9" class="t s2_9" onclick="location.href='Valj_sida.html'" style="cursor:pointer;">Välj sida</div>
+                    <div id="t3_9" class="t s2_9" onclick="location.href='Valj_kapitel.html'" style="cursor:pointer;">Välj kapitel</div>
+                    <div id="t4_9" class="t s2_9" onclick="location.href='Verb.html'" style="cursor:pointer;">Bokens övning</div>
+                    <div id="t5_9" class="t s2_9" onclick="var list = document.getElementsByTagName('form');for(var i = 0; i < list.length; i ++) {	var form = list.item(i);	form.reset();}" style="cursor:pointer;">Rensa textfält</div>
+                    <div id="t6_9" class="t s3_9">Skriv två egna verb och böj dem.</div>
+                    <div id="t7_9" class="t s4_9">SPRÅKLÄRA</div>
+                    <div id="t8_9" class="t s5_9">Verb</div>
+                    <div id="t9_9" class="t s3_9">Verb kan böjas i olika tidsformer.</div>
+                    <div id="ta_9" class="t s3_9">Böj verben.</div>
+                    <div id="tb_9" class="t s3_9">Ringa in alla verb.</div>
+                    <div id="tc_9" class="t s6_9 tick">studsmatta</div>
+                    <div id="td_9" class="t s6_9 tick">middag</div>
+                    <div id="te_9" class="t s6_9 tick">skriver</div>
+                    <div id="tf_9" class="t s6_9 tick">klipper</div>
+                    <div id="tg_9" class="t s6_9 tick">pratar</div>
+                    <div id="th_9" class="t s6_9 tick">äter</div>
+                    <div id="ti_9" class="t s6_9">badar</div>
+                    <div id="tj_9" class="t s6_9">badade</div>
+                    <div id="tk_9" class="t s6_9">badat</div>
+                    <div id="tl_9" class="t s6_9">hostade</div>
+                    <div id="tm_9" class="t s6_9">fiskar</div>
+                    <div id="tn_9" class="t s6_9">städat</div>
+                    <div id="to_9" class="t s6_9">krockar</div>
+                    <div id="tp_9" class="t s7_9">Verb</div>
+                    <div id="tq_9" class="t s3_9">är ord som</div>
+                    <div id="tr_9" class="t s3_9">berättar vad någon</div>
+                    <div id="ts_9" class="t s3_9">gör, eller vad som</div>
+                    <div id="tt_9" class="t s3_9">händer.</div>
+                    <div id="tu_9" class="t s3_9">idag (gör)</div>
+                    <div id="tv_9" class="t s3_9">igår (gjorde)</div>
+                    <div id="tw_9" class="t s3_9">har (gjort)</div>
+                    <!-- End text definitions -->
+                    <!-- Begin Form Data -->
+                    <form>
+                        <input type="button" tabindex="5" id="form9_1" name="306 0 R" pdfFieldName="306 0 R" onclick="location.href='Stadens_superhjalte1.html'" style="cursor:pointer;" title="Stadens superhjälte" />
+                        <input type="button" tabindex="2" id="form9_2" name="304 0 R" pdfFieldName="304 0 R" onclick="location.href='Valj_sida.html'" style="cursor:pointer;" title="Välj sida" />
+                        <input type="button" tabindex="3" id="form9_3" name="305 0 R" pdfFieldName="305 0 R" onclick="location.href='Verb.html'" style="cursor:pointer;" title="Verb" />
+                        <input type="button" tabindex="1" id="form9_4" name="303 0 R" pdfFieldName="303 0 R" onclick="location.href='Valj_kapitel.html'" style="cursor:pointer;" title="Välj kapitel" />
+                        <input type="button" tabindex="4" id="form9_5" name="1151 0 R" pdfFieldName="1151 0 R" onclick="var list = document.getElementsByTagName('form');
+for(var i = 0; i < list.length; i ++) {
+	var form = list.item(i);
+	form.reset();
+}" style="cursor:pointer;" />
+                        <input type="text" tabindex="6" maxlength="10" id="CL_ST_P09_T01" name="P09_T01" pdfFieldName="P09_T01" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="7" maxlength="10" id="CL_ST_P09_T02" name="P09_T02" pdfFieldName="P09_T02" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="8" maxlength="10" id="CL_ST_P09_T03" name="P09_T03" pdfFieldName="P09_T03" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="9" maxlength="10" id="CL_ST_P09_T04" name="P09_T04" pdfFieldName="P09_T04" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="10" maxlength="10" id="CL_ST_P09_T05" name="P09_T05" pdfFieldName="P09_T05" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="11" maxlength="10" id="CL_ST_P09_T06" name="P09_T06" pdfFieldName="P09_T06" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="12" maxlength="10" id="CL_ST_P09_T07" name="P09_T07" pdfFieldName="P09_T07" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="13" maxlength="10" id="CL_ST_P09_T08" name="P09_T08" pdfFieldName="P09_T08" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="14" maxlength="10" id="CL_ST_P09_T09" name="P09_T09" pdfFieldName="P09_T09" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="15" maxlength="10" id="CL_ST_P09_T10" name="P09_T10" pdfFieldName="P09_T10" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="16" maxlength="10" id="CL_ST_P09_T11" name="P09_T11" pdfFieldName="P09_T11" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="17" maxlength="10" id="CL_ST_P09_T12" name="P09_T12" pdfFieldName="P09_T12" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="18" maxlength="10" id="CL_ST_P09_T13" name="P09_T13" pdfFieldName="P09_T13" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="19" maxlength="10" id="CL_ST_P09_T14" name="P09_T14" pdfFieldName="P09_T14" onfocus="TrackInsightsTextBoxes(this)"/>
+                    </form>
+                    <!-- End Form Data -->
+                    <!-- Begin page background -->
+                    <div id="pg9Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+                    <div id="pg9">
+                        <object width="1125" height="1125" data="9/9.svg" type="image/svg+xml" id="svgImage" style="width:1125px; height:1125px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object>
+                    </div>
+                    <!-- End page background -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../assets/jquery.min.js"></script>
+    <script src="../../assets/app_clown.min.js" type="text/javascript"></script>
+    <script src="../../assets/IDRViewer.min.js" type="text/javascript"></script>
+    <script src="//rum-static.pingdom.net/pa-5aab4ff34c40770007000465.js" async></script>
+</body>
+
+</html>

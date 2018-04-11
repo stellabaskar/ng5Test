@@ -1,0 +1,419 @@
+ .t {
+     position: absolute;
+     -webkit-transform-origin: top left;
+     -moz-transform-origin: top left;
+     -o-transform-origin: top left;
+     -ms-transform-origin: top left;
+     -webkit-transform: scale(0.25);
+     -moz-transform: scale(0.25);
+     -o-transform: scale(0.25);
+     -ms-transform: scale(0.25);
+     z-index: 2;
+     position: absolute;
+     white-space: nowrap;
+     overflow: visible;
+ }
+ 
+ #t1_3 {
+     left: 55px;
+     top: 83px;
+     letter-spacing: -1px;
+ }
+ 
+ #t2_3 {
+     left: 69px;
+     top: 197px;
+ }
+ 
+ #t3_3 {
+     left: 69px;
+     top: 144px;
+ }
+ 
+ #t4_3 {
+     left: 69px;
+     top: 250px;
+ }
+ 
+ #t5_3 {
+     left: 977px;
+     top: 1077px;
+     letter-spacing: 5px;
+ }
+ 
+ #t6_3 {
+     left: 265px;
+     top: 28px;
+     letter-spacing: -17px;
+ }
+ 
+ #t6_4 {
+     left: 426px;
+     top: 28px;
+     letter-spacing: -17px;
+ }
+ 
+ #t7_3 {
+     left: 265px;
+     top: 139px;
+     letter-spacing: 1px;
+ }
+ 
+ #t8_3 {
+     left: 265px;
+     top: 563px;
+     letter-spacing: 1px;
+ }
+ 
+ #t9_3 {
+     left: 265px;
+     top: 585px;
+     letter-spacing: 1px;
+ }
+ 
+ #ta_3 {
+     left: 265px;
+     top: 999px;
+     letter-spacing: 1px;
+ }
+ 
+ #tb_3 {
+     left: 267px;
+     top: 623px;
+     letter-spacing: 2px;
+ }
+ 
+ #tc_3 {
+     left: 267px;
+     top: 732px;
+     letter-spacing: 3px;
+ }
+ 
+ #form3_1 {
+     border-style: none;
+     z-index: 2;
+     position: absolute;
+     left: 113px;
+     top: 581px;
+     width: 35px;
+     height: 34px;
+     text-align: left;
+     background: transparent;
+     font: normal 25px Arial, Helvetica, sans-serif;
+ }
+ 
+ #form3_4 {
+     border-style: none;
+     z-index: 2;
+     position: absolute;
+     left: 54px;
+     top: 135px;
+     width: 142px;
+     height: 41px;
+     text-align: left;
+     background: transparent;
+     font: normal 32px Arial, Helvetica, sans-serif;
+ }
+ 
+ #form3_5 {
+     border-style: none;
+     z-index: 2;
+     position: absolute;
+     left: 54px;
+     top: 239px;
+     width: 141px;
+     height: 43px;
+     text-align: left;
+     background: transparent;
+     font: normal 33px Arial, Helvetica, sans-serif;
+ }
+ 
+ #form3_6 {
+     border-style: none;
+     z-index: 2;
+     position: absolute;
+     left: 52px;
+     top: 185px;
+     width: 144px;
+     height: 44px;
+     text-align: left;
+     background: transparent;
+     font: normal 35px Arial, Helvetica, sans-serif;
+ }
+ 
+ #CL_ST_P03_T01 {
+     z-index: 2;
+     position: absolute;
+     left: 332px;
+     top: 266px;
+     width: 173px;
+     height: 29px;
+     text-align: left;
+     background: transparent;
+     border-color: transparent;
+     font: normal 25px Arial, Helvetica, sans-serif;
+ }
+ 
+ #CL_ST_P03_T02 {
+     z-index: 2;
+     position: absolute;
+     left: 332px;
+     top: 309px;
+     width: 173px;
+     height: 41px;
+     text-align: left;
+     background: transparent;
+     border-color: transparent;
+     font: normal 36px Arial, Helvetica, sans-serif;
+ }
+ 
+ #CL_ST_P03_T03 {
+     z-index: 2;
+     position: absolute;
+     left: 332px;
+     top: 362px;
+     width: 173px;
+     height: 41px;
+     text-align: left;
+     background: transparent;
+     border-color: transparent;
+     font: normal 36px Arial, Helvetica, sans-serif;
+ }
+ 
+ #CL_ST_P03_T04 {
+     z-index: 2;
+     position: absolute;
+     left: 332px;
+     top: 417px;
+     width: 173px;
+     height: 41px;
+     text-align: left;
+     background: transparent;
+     border-color: transparent;
+     font: normal 36px Arial, Helvetica, sans-serif;
+ }
+ 
+ #CL_ST_P03_T05 {
+     z-index: 2;
+     position: absolute;
+     left: 573px;
+     top: 237px;
+     width: 171px;
+     height: 28px;
+     text-align: left;
+     background: transparent;
+     border-color: transparent;
+     font: normal 24px Arial, Helvetica, sans-serif;
+ }
+ 
+ #CL_ST_P03_T06 {
+     z-index: 2;
+     position: absolute;
+     left: 573px;
+     top: 278px;
+     width: 171px;
+     height: 41px;
+     text-align: left;
+     background: transparent;
+     border-color: transparent;
+     font: normal 36px Arial, Helvetica, sans-serif;
+ }
+ 
+ #CL_ST_P03_T07 {
+     z-index: 2;
+     position: absolute;
+     left: 573px;
+     top: 333px;
+     width: 171px;
+     height: 40px;
+     text-align: left;
+     background: transparent;
+     border-color: transparent;
+     font: normal 35px Arial, Helvetica, sans-serif;
+ }
+ 
+ #CL_ST_P03_T08 {
+     z-index: 2;
+     position: absolute;
+     left: 573px;
+     top: 387px;
+     width: 171px;
+     height: 41px;
+     text-align: left;
+     background: transparent;
+     border-color: transparent;
+     font: normal 36px Arial, Helvetica, sans-serif;
+ }
+ 
+ #CL_ST_P03_T09 {
+     z-index: 2;
+     position: absolute;
+     left: 821px;
+     top: 298px;
+     width: 173px;
+     height: 32px;
+     text-align: left;
+     background: transparent;
+     border-color: transparent;
+     font: normal 29px Arial, Helvetica, sans-serif;
+ }
+ 
+ #CL_ST_P03_T10 {
+     z-index: 2;
+     position: absolute;
+     left: 821px;
+     top: 344px;
+     width: 173px;
+     height: 40px;
+     text-align: left;
+     background: transparent;
+     border-color: transparent;
+     font: normal 35px Arial, Helvetica, sans-serif;
+ }
+ 
+ #CL_ST_P03_T11 {
+     z-index: 2;
+     position: absolute;
+     left: 821px;
+     top: 397px;
+     width: 173px;
+     height: 41px;
+     text-align: left;
+     background: transparent;
+     border-color: transparent;
+     font: normal 36px Arial, Helvetica, sans-serif;
+ }
+ 
+ #CL_ST_P03_T12 {
+     z-index: 2;
+     position: absolute;
+     left: 821px;
+     top: 452px;
+     width: 173px;
+     height: 40px;
+     text-align: left;
+     background: transparent;
+     border-color: transparent;
+     font: normal 35px Arial, Helvetica, sans-serif;
+ }
+ 
+ #CL_ST_P03_T13 {
+     z-index: 2;
+     position: absolute;
+     left: 611px;
+     top: 638px;
+     width: 460px;
+     height: 41px;
+     text-align: left;
+     background: transparent;
+     border-color: transparent;
+     font: normal 36px Arial, Helvetica, sans-serif;
+ }
+ 
+ #CL_ST_P03_T14 {
+     z-index: 2;
+     position: absolute;
+     left: 264px;
+     top: 688px;
+     width: 807px;
+     height: 41px;
+     text-align: left;
+     background: transparent;
+     border-color: transparent;
+     font: normal 36px Arial, Helvetica, sans-serif;
+ }
+ 
+ #CL_ST_P03_T15 {
+     z-index: 2;
+     position: absolute;
+     left: 624px;
+     top: 747px;
+     width: 448px;
+     height: 41px;
+     text-align: left;
+     background: transparent;
+     border-color: transparent;
+     font: normal 36px Arial, Helvetica, sans-serif;
+ }
+ 
+ #CL_ST_P03_T16 {
+     z-index: 2;
+     position: absolute;
+     left: 264px;
+     top: 801px;
+     width: 807px;
+     height: 40px;
+     text-align: left;
+     background: transparent;
+     border-color: transparent;
+     font: normal 35px Arial, Helvetica, sans-serif;
+ }
+ 
+ #CL_ST_P03_T17a {
+     z-index: 2;
+     position: absolute;
+     left: 635px;
+     top: 857px;
+     width: 437px;
+     height: 41px;
+     text-align: left;
+     background: transparent;
+     border-color: transparent;
+     font: normal 36px Arial, Helvetica, sans-serif;
+ }
+ 
+ #CL_ST_P03_T17 {
+     z-index: 2;
+     position: absolute;
+     left: 264px;
+     top: 906px;
+     width: 628px;
+     height: 41px;
+     text-align: left;
+     background: transparent;
+     border-color: transparent;
+     font: normal 36px Arial, Helvetica, sans-serif;
+ }
+ 
+ #td_3 {
+     left: 267px;
+     top: 840px;
+     letter-spacing: 3px;
+ }
+ 
+ .s2_3 {
+     FONT-SIZE: 55px;
+     FONT-FAMILY: Gotham-Medium;
+     color: rgb(0, 0, 0);
+ }
+ 
+ .s1_3 {
+     FONT-SIZE: 85px;
+     FONT-FAMILY: DonSemiformal;
+     color: rgb(255, 255, 255);
+ }
+ 
+ .s3_3 {
+     FONT-SIZE: 48px;
+     FONT-FAMILY: HelveticaNeue-Light;
+     color: rgb(0, 0, 0);
+ }
+ 
+ .s4_3 {
+     FONT-SIZE: 305px;
+     FONT-FAMILY: DonSemiformal;
+     color: rgb(230, 49, 14);
+ }
+ 
+ .s5_3 {
+     FONT-SIZE: 73px;
+     FONT-FAMILY: HelveticaNeue-Light;
+     color: rgb(0, 0, 0);
+ }
+ 
+ .s6_3 {
+     FONT-SIZE: 183px;
+     FONT-FAMILY: MajemaSkol;
+     color: rgb(0, 0, 0);
+     line-height: 160%;
+ }

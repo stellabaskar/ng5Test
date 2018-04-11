@@ -1,0 +1,345 @@
+ .t {
+     position: absolute;
+     -webkit-transform-origin: top left;
+     -moz-transform-origin: top left;
+     -o-transform-origin: top left;
+     -ms-transform-origin: top left;
+     -webkit-transform: scale(0.25);
+     -moz-transform: scale(0.25);
+     -o-transform: scale(0.25);
+     -ms-transform: scale(0.25);
+     z-index: 2;
+     position: absolute;
+     white-space: nowrap;
+     overflow: visible;
+ }
+ 
+ #t1_4 {
+     left: 69px;
+     top: 197px;
+ }
+ 
+ #t2_4 {
+     left: 69px;
+     top: 144px;
+ }
+ 
+ #t3_4 {
+     left: 69px;
+     top: 250px;
+ }
+ 
+ #t4_4 {
+     left: 976px;
+     top: 1077px;
+     letter-spacing: 5px;
+ }
+ 
+ #t5_4 {
+     left: 265px;
+     top: 37px;
+     letter-spacing: -2px;
+ }
+ 
+ #t6_4 {
+     left: 265px;
+     top: 283px;
+     letter-spacing: 1px;
+ }
+ 
+ #t7_4 {
+     left: 265px;
+     top: 305px;
+     letter-spacing: 1px;
+ }
+ 
+ #t8_4 {
+     left: 265px;
+     top: 857px;
+     letter-spacing: 1px;
+ }
+ 
+ #t9_4 {
+     left: 300px;
+     top: 143px;
+     letter-spacing: 2px;
+ }
+ 
+ #ta_4 {
+     left: 572px;
+     top: 140px;
+     letter-spacing: 2px;
+ }
+ 
+ #tb_4 {
+     left: 380px;
+     top: 194px;
+     letter-spacing: 2px;
+ }
+ 
+ #tc_4 {
+     left: 654px;
+     top: 181px;
+ }
+ 
+ #td_4 {
+     left: 776px;
+     top: 134px;
+     letter-spacing: 1px;
+ }
+ 
+ #te_4 {
+     left: 940px;
+     top: 177px;
+     letter-spacing: 2px;
+ }
+ 
+ #tf_4 {
+     left: 829px;
+     top: 187px;
+     letter-spacing: 1px;
+ }
+ 
+ #tg_4 {
+     left: 468px;
+     top: 155px;
+     letter-spacing: 2px;
+ }
+ 
+ #form4_1 {
+     border-style: none;
+     z-index: 2;
+     position: absolute;
+     left: 116px;
+     top: 579px;
+     width: 32px;
+     height: 34px;
+     text-align: left;
+     background: transparent;
+     font: normal 25px Arial, Helvetica, sans-serif;
+ }
+ 
+ #form4_2 {
+     border-style: none;
+     z-index: 2;
+     position: absolute;
+     left: 69px;
+     top: 581px;
+     width: 34px;
+     height: 32px;
+     text-align: left;
+     background: transparent;
+     font: normal 24px Arial, Helvetica, sans-serif;
+ }
+ 
+ #form4_3 {
+     border-style: none;
+     z-index: 2;
+     position: absolute;
+     left: 52px;
+     top: 188px;
+     width: 141px;
+     height: 38px;
+     text-align: left;
+     background: transparent;
+     font: normal 30px Arial, Helvetica, sans-serif;
+ }
+ 
+ #form4_4 {
+     border-style: none;
+     z-index: 2;
+     position: absolute;
+     left: 51px;
+     top: 133px;
+     width: 141px;
+     height: 40px;
+     text-align: left;
+     background: transparent;
+     font: normal 30px Arial, Helvetica, sans-serif;
+ }
+ 
+ #form4_5 {
+     border-style: none;
+     z-index: 2;
+     position: absolute;
+     left: 52px;
+     top: 239px;
+     width: 141px;
+     height: 43px;
+     text-align: left;
+     background: transparent;
+     font: normal 33px Arial, Helvetica, sans-serif;
+ }
+ 
+ #CL_ST_P04_T01 {
+     z-index: 2;
+     position: absolute;
+     left: 417px;
+     top: 388px;
+     width: 225px;
+     height: 40px;
+     text-align: left;
+     background: transparent;
+     border-color: transparent;
+     font: normal 35px Arial, Helvetica, sans-serif;
+ }
+ 
+ #CL_ST_P04_T05 {
+     z-index: 2;
+     position: absolute;
+     left: 417px;
+     top: 631px;
+     width: 225px;
+     height: 40px;
+     text-align: left;
+     background: transparent;
+     border-color: transparent;
+     font: normal 35px Arial, Helvetica, sans-serif;
+ }
+ 
+ #CL_ST_P04_T09 {
+     z-index: 2;
+     position: absolute;
+     left: 417px;
+     top: 961px;
+     width: 225px;
+     height: 40px;
+     text-align: left;
+     background: transparent;
+     border-color: transparent;
+     font: normal 35px Arial, Helvetica, sans-serif;
+ }
+ 
+ #CL_ST_P04_T02 {
+     z-index: 2;
+     position: absolute;
+     left: 845px;
+     top: 388px;
+     width: 226px;
+     height: 40px;
+     text-align: left;
+     background: transparent;
+     border-color: transparent;
+     font: normal 35px Arial, Helvetica, sans-serif;
+ }
+ 
+ #CL_ST_P04_T10 {
+     z-index: 2;
+     position: absolute;
+     left: 845px;
+     top: 961px;
+     width: 226px;
+     height: 40px;
+     text-align: left;
+     background: transparent;
+     border-color: transparent;
+     font: normal 35px Arial, Helvetica, sans-serif;
+ }
+ 
+ #CL_ST_P04_T06 {
+     z-index: 2;
+     position: absolute;
+     left: 845px;
+     top: 631px;
+     width: 226px;
+     height: 40px;
+     text-align: left;
+     background: transparent;
+     border-color: transparent;
+     font: normal 35px Arial, Helvetica, sans-serif;
+ }
+ 
+ #CL_ST_P04_T07 {
+     z-index: 2;
+     position: absolute;
+     left: 417px;
+     top: 750px;
+     width: 225px;
+     height: 41px;
+     text-align: left;
+     background: transparent;
+     border-color: transparent;
+     font: normal 36px Arial, Helvetica, sans-serif;
+ }
+ 
+ #CL_ST_P04_T03 {
+     z-index: 2;
+     position: absolute;
+     left: 417px;
+     top: 510px;
+     width: 225px;
+     height: 41px;
+     text-align: left;
+     background: transparent;
+     border-color: transparent;
+     font: normal 36px Arial, Helvetica, sans-serif;
+ }
+ 
+ #CL_ST_P04_T08 {
+     z-index: 2;
+     position: absolute;
+     left: 845px;
+     top: 750px;
+     width: 226px;
+     height: 41px;
+     text-align: left;
+     background: transparent;
+     border-color: transparent;
+     font: normal 36px Arial, Helvetica, sans-serif;
+ }
+ 
+ #CL_ST_P04_T04 {
+     z-index: 2;
+     position: absolute;
+     left: 845px;
+     top: 510px;
+     width: 226px;
+     height: 41px;
+     text-align: left;
+     background: transparent;
+     border-color: transparent;
+     font: normal 36px Arial, Helvetica, sans-serif;
+ }
+ 
+ #th_4 {
+     left: 55px;
+     top: 83px;
+     letter-spacing: -1px;
+ }
+ 
+ .s1_4 {
+     FONT-SIZE: 55px;
+     FONT-FAMILY: Gotham-Medium;
+     color: rgb(0, 0, 0);
+ }
+ 
+ .s3_4 {
+     FONT-SIZE: 244px;
+     FONT-FAMILY: DonSemiformal;
+     color: rgb(230, 49, 14);
+ }
+ 
+ .s4_4 {
+     FONT-SIZE: 73px;
+     FONT-FAMILY: HelveticaNeue-Light;
+     color: rgb(0, 0, 0);
+ }
+ 
+ .s5_4 {
+     FONT-SIZE: 183px;
+     FONT-FAMILY: MajemaSkol;
+     color: rgb(0, 0, 0);
+     line-height: 150%;
+ }
+ 
+ .s6_4 {
+     FONT-SIZE: 85px;
+     FONT-FAMILY: DonSemiformal;
+     color: rgb(255, 255, 255);
+ }
+ 
+ .s2_4 {
+     FONT-SIZE: 48px;
+     FONT-FAMILY: HelveticaNeue-Light;
+     color: rgb(0, 0, 0);
+ }

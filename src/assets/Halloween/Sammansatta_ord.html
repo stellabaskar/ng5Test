@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html >
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Halloween</title>
+    <script src="../../assets/dom-extensions.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="../../assets/app.min.css">
+    <link rel="stylesheet" type="text/css" href="06/6.min.css">
+</head>
+
+<body>
+    <div id="hide"></div>
+    <div id="left">
+        <div id="leftNav">
+            <div id="btnThumbnails" onclick="IDRViewer.toggleOutlines(false)" title="Thumbnails" class="navBtn inactive"></div>
+            <div id="btnOutlines" onclick="IDRViewer.toggleOutlines(true)" title="Bookmarks" class="navBtn inactive"></div>
+        </div>
+        <div id="leftContent">
+            <!-- <div id="thumbnailPanel"></div> -->
+            <div id="outlinePanel"></div>
+        </div>
+    </div>
+    <div id="main">
+        <div id="mainNav">
+            <div id="btnSideToggle" onclick="IDRViewer.toggleThumbnails();" class="navBtn">
+                <div title="Sidebar"></div>
+            </div>
+            <div id="btnPrev" title="Previous Page" onclick="IDRViewer.prev()" class="navBtn"></div>
+            <select id="goBtn" onchange="IDRViewer.goToPage(0)">
+            </select>
+            <span id="pgCount"></span>
+            <div id="btnNext" title="Next Page" onclick="IDRViewer.next()" class="navBtn"></div>
+            <div id="btnSelect" title="Select" onclick="IDRViewer.setSelectMode(0)" class="navBtn"></div>
+            <div id="btnMove" title="Pan" onclick="IDRViewer.setSelectMode(1)" class="navBtn"></div>
+            <div id="btnZoomOut" title="Zoom Out" onclick="IDRViewer.zoomOut()" class="navBtn"></div>
+            <select id="zoomBtn" onchange="IDRViewer.zoomUpdate()">
+                <option value="0">100%</option>
+                <option value="1">Actual Size</option>
+                <option value="2">Fit Width</option>
+                <option value="3">Fit Height</option>
+                <option value="4">Fit Page</option>
+                <option value="5">Automatic</option>
+            </select>
+            <div id="btnZoomIn" title="Zoom In" onclick="IDRViewer.zoomIn()" class="navBtn"></div>
+            <div id="btnFullscreen" title="Fullscreen" onclick="IDRViewer.toggleFullScreen();" class="navBtn closed"></div>
+        </div>
+        <div id="mainContent">
+            <div id="contentContainer">
+                <div id="jpedal" style="position:relative; width: 1125px; height: 1125px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+                    <div id="t1_6" class="t s1_6" onclick="location.href='Valj_sida.html'" style="cursor:pointer;">Välj sida</div>
+                    <div id="t2_6" class="t s1_6" onclick="location.href='Sammansatta_ord1.html'" style="cursor:pointer;">Extra övning</div>
+                    <div id="t3_6" class="t s1_6" onclick="location.href='Valj_kapitel.html'" style="cursor:pointer;">Välj kapitel</div>
+                    <div id="t4_6" class="t s1_6" onclick="var list = document.getElementsByTagName('form');for(var i = 0; i < list.length; i ++) {	var form = list.item(i);	form.reset();}" style="cursor:pointer;">Rensa textfält</div>
+                    <div id="t5_6" class="t s2_6">HALLOWEEN</div>
+                    <div id="t6_6" class="t s3_6">skriva<span id="t7_6" class="s4_6"> + </span><span id="t8_6" class="s3_6">bok</span><span id="t9_6" class="s4_6"> = </span></div>
+                    <div id="ta_6" class="t s3_6">fisk<span id="tb_6" class="s4_6"> + </span><span id="tc_6" class="s3_6">båt</span><span id="td_6" class="s4_6"> = </span></div>
+                    <div id="te_6" class="t s3_6">land<span id="tf_6" class="s4_6"> + </span><span id="tg_6" class="s3_6">lag</span><span id="th_6" class="s4_6"> = </span></div>
+                    <div id="ti_6" class="t s3_6">flyta<span id="tj_6" class="s4_6"> + </span><span id="tk_6" class="s3_6">väst</span><span id="tl_6" class="s4_6"> = </span></div>
+                    <div id="tm_6" class="t s3_6">sova<span id="tn_6" class="s4_6"> + </span><span id="to_6" class="s3_6">säck</span><span id="tp_6" class="s4_6"> = </span></div>
+                    <div id="tq_6" class="t s3_6">år<span id="tr_6" class="s4_6"> + </span><span id="ts_6" class="s3_6">tid</span><span id="tt_6" class="s4_6"> = </span></div>
+                    <div id="tu_6" class="t s4_6">Använd bilderna och skriv sammansatta ord.</div>
+                    <div id="tv_6" class="t s4_6">Avsluta med ett ”tokord”, t.ex. solgubbe.</div>
+                    <div id="tw_6" class="t s4_6">Ibland måste man ta bort eller lägga till en bokstav.</div>
+                    <div id="tx_6" class="t s4_6">Skriv sammansatta ord.</div>
+                    <div id="ty_6" class="t s5_6">SPRÅKLÄRA</div>
+                    <div id="tz_6" class="t s6_6">Sammansatta ord</div>
+                    <div id="t10_6" class="t s3_6">fick<span id="t11_6" class="s7_6">a</span><span id="t12_6" class="s4_6"> + </span><span id="t13_6" class="s3_6">lampa</span><span id="t14_6" class="s4_6"> = </span></div>
+                    <div id="t15_6" class="t s3_6">ficklampa</div>
+                    <div id="t16_6" class="t s3_6">papper<span class="s4_6"> + </span>korg<span class="s4_6"> = </span>papper<span class="s7_6">s</span>korg</div>
+                    <div id="t1d_6" class="t s4_6">Sätt samman två eller</div>
+                    <div id="t1e_6" class="t s4_6">ﬂera ord så blir det ett</div>
+                    <div id="t1f_6" class="t s4_6"><span class="s8_6">sammansatt</span> ord.</div>
+                    <div id="t1h_6" class="t s4_6">glas + ögon = glasögon</div>
+                    <!-- End text definitions -->
+                    <!-- Begin Form Data -->
+                    <form>
+                        <input type="button" tabindex="5" id="form6_1" name="321 0 R" pdfFieldName="321 0 R" onclick="location.href='Substantiv.html'" style="cursor:pointer;" title="Substantiv" />
+                        <input type="button" tabindex="6" id="form6_2" name="322 0 R" pdfFieldName="322 0 R" onclick="location.href='Nar_det_spokade.html'" style="cursor:pointer;" title="När det spökade" />
+                        <input type="button" tabindex="3" id="form6_3" name="320 0 R" pdfFieldName="320 0 R" onclick="location.href='Sammansatta_ord1.html'" style="cursor:pointer;" title="Sammansatta ord" />
+                        <input type="button" tabindex="1" id="form6_4" name="318 0 R" pdfFieldName="318 0 R" onclick="location.href='Valj_kapitel.html'" style="cursor:pointer;" title="Välj kapitel" />
+                        <input type="button" tabindex="2" id="form6_6" name="319 0 R" pdfFieldName="319 0 R" onclick="location.href='Valj_sida.html'" style="cursor:pointer;" title="Välj sida" />
+                        <input type="button" tabindex="4" id="form6_5" name="1535 0 R" pdfFieldName="1535 0 R" onclick="var list = document.getElementsByTagName('form');
+for(var i = 0; i < list.length; i ++) {
+	var form = list.item(i);
+	form.reset();
+}" style="cursor:pointer;" />
+                        <input type="text" tabindex="7" maxlength="20" id="CL_HA_P06_T01" name="P06_T01" pdfFieldName="P06_T01" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="8" maxlength="20" id="CL_HA_P06_T02" name="P06_T02" pdfFieldName="P06_T02" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="9" maxlength="20" id="CL_HA_P06_T03" name="P06_T03" pdfFieldName="P06_T03" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="10" maxlength="20" id="CL_HA_P06_T04" name="P06_T04" pdfFieldName="P06_T04" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="11" maxlength="20" id="CL_HA_P06_T05" name="P06_T05" pdfFieldName="P06_T05" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="12" maxlength="20" id="CL_HA_P06_T06" name="P06_T06" pdfFieldName="P06_T06" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="13" maxlength="10" id="CL_HA_P06_T07" name="P06_T07" pdfFieldName="P06_T07" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="14" maxlength="10" id="CL_HA_P06_T08" name="P06_T08" pdfFieldName="P06_T08" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="16" maxlength="10" id="CL_HA_P06_T09" name="P06_T09" pdfFieldName="P06_T09" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="15" maxlength="10" id="CL_HA_P06_T10" name="P06_T10" pdfFieldName="P06_T10" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="17" maxlength="10" id="CL_HA_P06_T11" name="P06_T11" pdfFieldName="P06_T11" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="18" maxlength="10" id="CL_HA_P06_T12" name="P06_T12" pdfFieldName="P06_T12" onfocus="TrackInsightsTextBoxes(this)"/>
+                    </form>
+                    <!-- End Form Data -->
+                    <!-- Begin page background -->
+                    <div id="pg6Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+                    <div id="pg6">
+                        <object width="1125" height="1125" data="06/6.svg" type="image/svg+xml" id="svgImage" style="width:1125px; height:1125px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../assets/jquery.min.js"></script>
+    <script src="../../assets/app_clown.min.js" type="text/javascript"></script>
+    <script src="../../assets/IDRViewer.min.js" type="text/javascript"></script>
+    <script src="//rum-static.pingdom.net/pa-5aab4ff34c40770007000465.js" async></script>
+</body>
+
+</html>

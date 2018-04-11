@@ -1,0 +1,212 @@
+<!DOCTYPE html >
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Vinter</title>
+<!--     <script src="../../assets/dom-extensions.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="../../assets/app.min.css">
+    <link rel="stylesheet" type="text/css" href="6/6.min.css"> -->
+</head>
+
+<body>
+    <div id="hide"></div>
+    <div id="left">
+        <div id="leftNav">
+            <div id="btnThumbnails" onclick="IDRViewer.toggleOutlines(false)" title="Thumbnails" class="navBtn inactive"></div>
+            <div id="btnOutlines" onclick="IDRViewer.toggleOutlines(true)" title="Bookmarks" class="navBtn inactive"></div>
+        </div>
+        <div id="leftContent">
+            <!-- <div id="thumbnailPanel"></div> -->
+            <div id="outlinePanel"></div>
+        </div>
+    </div>
+    <div id="main">
+        <div id="mainNav">
+            <div id="btnSideToggle" onclick="IDRViewer.toggleThumbnails();" class="navBtn">
+                <div title="Sidebar"></div>
+            </div>
+            <div id="btnPrev" title="Previous Page" onclick="IDRViewer.prev()" class="navBtn"></div>
+            <select id="goBtn" onchange="IDRViewer.goToPage(0)">
+            </select>
+            <span id="pgCount"></span>
+            <div id="btnNext" title="Next Page" onclick="IDRViewer.next()" class="navBtn"></div>
+            <div id="btnSelect" title="Select" onclick="IDRViewer.setSelectMode(0)" class="navBtn"></div>
+            <div id="btnMove" title="Pan" onclick="IDRViewer.setSelectMode(1)" class="navBtn"></div>
+            <div id="btnZoomOut" title="Zoom Out" onclick="IDRViewer.zoomOut()" class="navBtn"></div>
+            <select id="zoomBtn" onchange="IDRViewer.zoomUpdate()">
+                <option value="0">100%</option>
+                <option value="1">Actual Size</option>
+                <option value="2">Fit Width</option>
+                <option value="3">Fit Height</option>
+                <option value="4">Fit Page</option>
+                <option value="5">Automatic</option>
+            </select>
+            <div id="btnZoomIn" title="Zoom In" onclick="IDRViewer.zoomIn()" class="navBtn"></div>
+            <div id="btnFullscreen" title="Fullscreen" onclick="IDRViewer.toggleFullScreen();" class="navBtn closed"></div>
+        </div>
+        <div id="mainContent">
+            <div id="contentContainer">
+                <div id="jpedal" style="position:relative; width: 1125px; height: 1125px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+                    <div id="t1_6" class="t s1_6" onclick = "store();" routerLink = "/vinter"  style="cursor:pointer;">Välj sida</div>
+                    <div id="t2_6" class="t s1_6" onclick = "store();" routerLink = "/main"  style="cursor:pointer;">Välj kapitel</div>
+                    <div id="t3_6" class="t s1_6" onclick="var list = document.getElementsByTagName('form');for(var i = 0; i < list.length; i ++) {	var form = list.item(i);	form.reset();}" style="cursor:pointer;">Rensa textfält</div>
+                    <div id="t4_6" class="t s2_6">Vem ska man krama</div>
+                    <div id="t5_6" class="t s2_6">ordentligt varje kväll?</div>
+                    <div id="t6_6" class="t s3_6">I ordﬂätan får du svaret.</div>
+                    <div id="t7_6" class="t s3_6">Svar:</div>
+                    <div id="t8_6" class="t s4_6">1. underlig</div>
+                    <div id="t9_6" class="t s4_6">2. lycklig</div>
+                    <div id="ta_6" class="t s4_6">3. snäll</div>
+                    <div id="tb_6" class="t s4_6">4. sorgsen</div>
+                    <div id="tc_6" class="t s4_6">5. rolig</div>
+                    <div id="td_6" class="t s4_6">6. sömnig</div>
+                    <div id="te_6" class="t s4_6">7. otäck</div>
+                    <div id="tf_6" class="t s4_6">8. tunn</div>
+                    <div id="tg_6" class="t s4_6">9. arg</div>
+                    <div id="th_6" class="t s4_6">10. tjock</div>
+                    <div id="ti_6" class="t s4_6">11. elak</div>
+                    <div id="tj_6" class="t s4_6">12. kvick</div>
+                    <div id="tk_6" class="t s4_6">13. ﬁn</div>
+                    <div id="tl_6" class="t s4_6">14. sakta</div>
+                    <div id="tm_6" class="t s5_6">SPRÅKLÄRA</div>
+                    <div id="tn_6" class="t s6_6">Synonymer</div>
+                    <div id="to_6" class="t s7_6">långsam</div>
+                    <div id="tp_6" class="t s7_6">konstig</div>
+                    <div id="tq_6" class="t s7_6">läskig</div>
+                    <div id="tr_6" class="t s7_6">ledsen</div>
+                    <div id="ts_6" class="t s7_6">fet</div>
+                    <div id="tt_6" class="t s7_6">smal</div>
+                    <div id="tu_6" class="t s7_6">ilsken</div>
+                    <div id="tv_6" class="t s7_6">glad</div>
+                    <div id="tw_6" class="t s7_6">trött</div>
+                    <div id="tx_6" class="t s7_6">dum</div>
+                    <div id="ty_6" class="t s7_6">vänlig</div>
+                    <div id="tz_6" class="t s7_6">vacker</div>
+                    <div id="t10_6" class="t s7_6">snabb</div>
+                    <div id="t11_6" class="t s7_6">skojig</div>
+                    <div id="t12_6" class="t s3_6">Skriv synonymer.</div>
+                    <div id="t13_6" class="t s3_6">Använd orden i ordbanken.</div>
+                    <div id="t14_6" class="t s2_6">Synonymer</div>
+                    <div id="t15_6" class="t s3_6">är</div>
+                    <div id="t16_6" class="t s3_6">ord som betyder</div>
+                    <div id="t17_6" class="t s3_6">nästan samma sak.</div>
+                    <div id="t18_6" class="t s8_6">VINTER</div>
+                    <div id="t19_6" class="t s2_6">1.</div>
+                    <div id="t1a_6" class="t s2_6">2.</div>
+                    <div id="t1b_6" class="t s2_6">3.</div>
+                    <div id="t1c_6" class="t s2_6">4.</div>
+                    <div id="t1d_6" class="t s2_6">5.</div>
+                    <div id="t1e_6" class="t s2_6">6.</div>
+                    <div id="t1f_6" class="t s2_6">7.</div>
+                    <div id="t1g_6" class="t s2_6">8.</div>
+                    <div id="t1h_6" class="t s2_6">9.</div>
+                    <div id="t1i_6" class="t s2_6">10.</div>
+                    <div id="t1j_6" class="t s2_6">14.</div>
+                    <div id="t1k_6" class="t s2_6">13.</div>
+                    <div id="t1l_6" class="t s2_6">12.</div>
+                    <div id="t1m_6" class="t s2_6">11.</div>
+                    <!-- End text definitions -->
+                    <!-- Begin Form Data -->
+                    <form>
+                        <input type="button" tabindex="4" id="form6_1" name="270 0 R" pdfFieldName="270 0 R" onclick = "store();" routerLink = "/adjektiv"  style="cursor:pointer;" title="Adjektiv" />
+                        <input type="button" tabindex="5" id="form6_76" name="271 0 R" pdfFieldName="271 0 R" onclick = "store();" routerLink = "/snostormen"  style="cursor:pointer;" title="Snöstormen" />
+                        <input type="button" tabindex="2" id="form6_77" name="269 0 R" pdfFieldName="269 0 R" onclick = "store();" routerLink = "/vinter" style="cursor:pointer;" title="Välj sida" />
+                        <input type="button" tabindex="1" id="form6_78" name="268 0 R" pdfFieldName="268 0 R" onclick = "store();" routerLink = "/main"  style="cursor:pointer;" title="Välj kapitel" />
+                        <input type="button" tabindex="3" id="form6_79" name="1177 0 R" pdfFieldName="1177 0 R" onclick="var list = document.getElementsByTagName('form');for(var i = 0; i < list.length; i ++) {	var form = list.item(i);	form.reset();}" style="cursor:pointer;" />
+                        <input type="text" tabindex="6" id="CL_VI_P06_T01_1" maxlength="1" class="jump" name="P06_T01_1" pdfFieldName="P06_T01_1" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="7" id="CL_VI_P06_T01_2" maxlength="1" class="jump" name="P06_T01_2" pdfFieldName="P06_T01_2" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="8" id="CL_VI_P06_T01_3" maxlength="1" class="jump" name="P06_T01_3" pdfFieldName="P06_T01_3" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="9" id="CL_VI_P06_T01_4" maxlength="1" class="jump" name="P06_T01_4" pdfFieldName="P06_T01_4" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="10" id="CL_VI_P06_T01_5" maxlength="1" class="jump" name="P06_T01_5" pdfFieldName="P06_T01_5" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="11" id="CL_VI_P06_T01_6" maxlength="1" class="jump" name="P06_T01_6" pdfFieldName="P06_T01_6" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="12" id="CL_VI_P06_T01_7" maxlength="1" class="jump" name="P06_T01_7" pdfFieldName="P06_T01_7" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="13" id="CL_VI_P06_T02_1" maxlength="1" class="jump" name="P06_T02_1" pdfFieldName="P06_T02_1" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="14" id="CL_VI_P06_T02_2" maxlength="1" class="jump" name="P06_T02_2" pdfFieldName="P06_T02_2" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="15" id="CL_VI_P06_T02_3" maxlength="1" class="jump" name="P06_T02_3" pdfFieldName="P06_T02_3" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="16" id="CL_VI_P06_T02_4" maxlength="1" class="jump" name="P06_T02_4" pdfFieldName="P06_T02_4" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="17" id="CL_VI_P06_T03_1" maxlength="1" class="jump" name="P06_T03_1" pdfFieldName="P06_T03_1" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="18" id="CL_VI_P06_T03_2" maxlength="1" class="jump" name="P06_T03_2" pdfFieldName="P06_T03_2" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="19" id="CL_VI_P06_T03_3" maxlength="1" class="jump" name="P06_T03_3" pdfFieldName="P06_T03_3" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="20" id="CL_VI_P06_T03_4" maxlength="1" class="jump" name="P06_T03_4" pdfFieldName="P06_T03_4" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="21" id="CL_VI_P06_T03_5" maxlength="1" class="jump" name="P06_T03_5" pdfFieldName="P06_T03_5" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="22" id="CL_VI_P06_T03_6" maxlength="1" class="jump" name="P06_T03_6" pdfFieldName="P06_T03_6" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="23" id="CL_VI_P06_T04_1" maxlength="1" class="jump" name="P06_T04_1" pdfFieldName="P06_T04_1" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="24" id="CL_VI_P06_T04_2" maxlength="1" class="jump" name="P06_T04_2" pdfFieldName="P06_T04_2" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="25" id="CL_VI_P06_T04_3" maxlength="1" class="jump" name="P06_T04_3" pdfFieldName="P06_T04_3" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="26" id="CL_VI_P06_T04_4" maxlength="1" class="jump" name="P06_T04_4" pdfFieldName="P06_T04_4" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="27" id="CL_VI_P06_T04_5" maxlength="1" class="jump" name="P06_T04_5" pdfFieldName="P06_T04_5" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="28" id="CL_VI_P06_T04_6" maxlength="1" class="jump" name="P06_T04_6" pdfFieldName="P06_T04_6" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="29" id="CL_VI_P06_T05_1" maxlength="1" class="jump" name="P06_T05_1" pdfFieldName="P06_T05_1" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="30" id="CL_VI_P06_T05_2" maxlength="1" class="jump" name="P06_T05_2" pdfFieldName="P06_T05_2" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="31" id="CL_VI_P06_T05_3" maxlength="1" class="jump" name="P06_T05_3" pdfFieldName="P06_T05_3" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="32" id="CL_VI_P06_T05_4" maxlength="1" class="jump" name="P06_T05_4" pdfFieldName="P06_T05_4" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="33" id="CL_VI_P06_T05_5" maxlength="1" class="jump" name="P06_T05_5" pdfFieldName="P06_T05_5" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="34" id="CL_VI_P06_T05_6" maxlength="1" class="jump" name="P06_T05_6" pdfFieldName="P06_T05_6" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="35" id="CL_VI_P06_T06_1" maxlength="1" class="jump" name="P06_T06_1" pdfFieldName="P06_T06_1" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="36" id="CL_VI_P06_T06_2" maxlength="1" class="jump" name="P06_T06_2" pdfFieldName="P06_T06_2" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="37" id="CL_VI_P06_T06_3" maxlength="1" class="jump" name="P06_T06_3" pdfFieldName="P06_T06_3" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="38" id="CL_VI_P06_T06_4" maxlength="1" class="jump" name="P06_T06_4" pdfFieldName="P06_T06_4" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="39" id="CL_VI_P06_T06_5" maxlength="1" class="jump" name="P06_T06_5" pdfFieldName="P06_T06_5" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="40" id="CL_VI_P06_T07_1" maxlength="1" class="jump" name="P06_T07_1" pdfFieldName="P06_T07_1" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="41" id="CL_VI_P06_T07_2" maxlength="1" class="jump" name="P06_T07_2" pdfFieldName="P06_T07_2" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="42" id="CL_VI_P06_T07_3" maxlength="1" class="jump" name="P06_T07_3" pdfFieldName="P06_T07_3" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="43" id="CL_VI_P06_T07_4" maxlength="1" class="jump" name="P06_T07_4" pdfFieldName="P06_T07_4" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="44" id="CL_VI_P06_T07_5" maxlength="1" class="jump" name="P06_T07_5" pdfFieldName="P06_T07_5" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="45" id="CL_VI_P06_T07_6" maxlength="1" class="jump" name="P06_T07_6" pdfFieldName="P06_T07_6" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="46" id="CL_VI_P06_T08_1" maxlength="1" class="jump" name="P06_T08_1" pdfFieldName="P06_T08_1" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="47" id="CL_VI_P06_T08_2" maxlength="1" class="jump" name="P06_T08_2" pdfFieldName="P06_T08_2" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="48" id="CL_VI_P06_T08_3" maxlength="1" class="jump" name="P06_T08_3" pdfFieldName="P06_T08_3" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="49" id="CL_VI_P06_T08_4" maxlength="1" class="jump" name="P06_T08_4" pdfFieldName="P06_T08_4" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="50" id="CL_VI_P06_T09_1" maxlength="1" class="jump" name="P06_T09_1" pdfFieldName="P06_T09_1" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="51" id="CL_VI_P06_T09_2" maxlength="1" class="jump" name="P06_T09_2" pdfFieldName="P06_T09_2" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="52" id="CL_VI_P06_T09_3" maxlength="1" class="jump" name="P06_T09_3" pdfFieldName="P06_T09_3" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="53" id="CL_VI_P06_T09_4" maxlength="1" class="jump" name="P06_T09_4" pdfFieldName="P06_T09_4" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="54" id="CL_VI_P06_T09_5" maxlength="1" class="jump" name="P06_T09_5" pdfFieldName="P06_T09_5" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="55" id="CL_VI_P06_T09_6" maxlength="1" class="jump" name="P06_T09_6" pdfFieldName="P06_T09_6" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="56" id="CL_VI_P06_T10_1" maxlength="1" class="jump" name="P06_T10_1" pdfFieldName="P06_T10_1" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="57" id="CL_VI_P06_T10_2" maxlength="1" class="jump" name="P06_T10_2" pdfFieldName="P06_T10_2" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="58" id="CL_VI_P06_T10_3" maxlength="1" class="jump" name="P06_T10_3" pdfFieldName="P06_T10_3" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="59" id="CL_VI_P06_T11_1" maxlength="1" class="jump" name="P06_T11_1" pdfFieldName="P06_T11_1" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="60" id="CL_VI_P06_T11_2" maxlength="1" class="jump" name="P06_T11_2" pdfFieldName="P06_T11_2" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="61" id="CL_VI_P06_T11_3" maxlength="1" class="jump" name="P06_T11_3" pdfFieldName="P06_T11_3" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="62" id="CL_VI_P06_T12_1" maxlength="1" class="jump" name="P06_T12_1" pdfFieldName="P06_T12_1" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="63" id="CL_VI_P06_T12_2" maxlength="1" class="jump" name="P06_T12_2" pdfFieldName="P06_T12_2" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="64" id="CL_VI_P06_T12_3" maxlength="1" class="jump" name="P06_T12_3" pdfFieldName="P06_T12_3" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="65" id="CL_VI_P06_T12_4" maxlength="1" class="jump" name="P06_T12_4" pdfFieldName="P06_T12_4" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="66" id="CL_VI_P06_T12_5" maxlength="1" class="jump" name="P06_T12_5" pdfFieldName="P06_T12_5" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="67" id="CL_VI_P06_T13_1" maxlength="1" class="jump" name="P06_T13_1" pdfFieldName="P06_T13_1" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="68" id="CL_VI_P06_T13_2" maxlength="1" class="jump" name="P06_T13_2" pdfFieldName="P06_T13_2" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="69" id="CL_VI_P06_T13_3" maxlength="1" class="jump" name="P06_T13_3" pdfFieldName="P06_T13_3" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="70" id="CL_VI_P06_T13_4" maxlength="1" class="jump" name="P06_T13_4" pdfFieldName="P06_T13_4" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="71" id="CL_VI_P06_T13_5" maxlength="1" class="jump" name="P06_T13_5" pdfFieldName="P06_T13_5" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="72" id="CL_VI_P06_T13_6" maxlength="1" class="jump" name="P06_T13_6" pdfFieldName="P06_T13_6" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="73" id="CL_VI_P06_T14_1" maxlength="1" class="jump" name="P06_T14_1" pdfFieldName="P06_T14_1" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="74" id="CL_VI_P06_T14_2" maxlength="1" class="jump" name="P06_T14_2" pdfFieldName="P06_T14_2" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="75" id="CL_VI_P06_T14_3" maxlength="1" class="jump" name="P06_T14_3" pdfFieldName="P06_T14_3" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="76" id="CL_VI_P06_T14_4" maxlength="1" class="jump" name="P06_T14_4" pdfFieldName="P06_T14_4" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="77" id="CL_VI_P06_T14_5" maxlength="1" class="jump" name="P06_T14_5" pdfFieldName="P06_T14_5" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="78" id="CL_VI_P06_T14_6" maxlength="1" class="jump" name="P06_T14_6" pdfFieldName="P06_T14_6" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="79" id="CL_VI_P06_T14_7" maxlength="1" class="jump" name="P06_T14_7" pdfFieldName="P06_T14_7" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="80" id="CL_VI_P06_T02" maxlength="15" name="P06_T02" pdfFieldName="P06_T02" onfocus="TrackInsightsTextBoxes(this)"/>
+                    </form>
+                    <!-- End Form Data -->
+                    <!-- Begin page background -->
+                    <div id="pg6Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+                    <div id="pg6">
+                        <object width="1125" height="1125" data="assets/Vinter/6/6.svg" type="image/svg+xml" id="svgImage" style="width:1125px; height:1125px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object>
+                    </div>
+                    <!-- End page background -->
+                </div>
+            </div>
+        </div>
+    </div>
+<!--     <script src="../../assets/jquery.min.js"></script>
+    <script src="../../assets/app_clown.min.js" type="text/javascript"></script>
+    <script src="../../assets/IDRViewer.min.js" type="text/javascript"></script>
+    <script src="//rum-static.pingdom.net/pa-5aab4ff34c40770007000465.js" async></script> -->
+</body>
+
+</html>

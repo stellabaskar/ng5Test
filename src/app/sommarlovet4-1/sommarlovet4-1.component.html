@@ -1,0 +1,115 @@
+<!DOCTYPE html >
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Sommarlovet</title>
+<!--     <script src="../../assets/dom-extensions.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="../../assets/app.min.css">
+    <link rel="stylesheet" type="text/css" href="11/11.min.css"> -->
+</head>
+
+<body>
+    <div id="hide"></div>
+    <div id="left">
+        <div id="leftNav">
+            <div id="btnThumbnails" onclick="IDRViewer.toggleOutlines(false)" title="Thumbnails" class="navBtn inactive"></div>
+            <div id="btnOutlines" onclick="IDRViewer.toggleOutlines(true)" title="Bookmarks" class="navBtn inactive"></div>
+        </div>
+        <div id="leftContent">
+            <!-- <div id="thumbnailPanel"></div> -->
+            <div id="outlinePanel"></div>
+        </div>
+    </div>
+    <div id="main">
+        <div id="mainNav">
+            <div id="btnSideToggle" onclick="IDRViewer.toggleThumbnails();" class="navBtn">
+                <div title="Sidebar"></div>
+            </div>
+            <div id="btnPrev" title="Previous Page" onclick="IDRViewer.prev()" class="navBtn"></div>
+            <select id="goBtn" onchange="IDRViewer.goToPage(0)">
+            </select>
+            <span id="pgCount"></span>
+            <div id="btnNext" title="Next Page" onclick="IDRViewer.next()" class="navBtn"></div>
+            <div id="btnSelect" title="Select" onclick="IDRViewer.setSelectMode(0)" class="navBtn"></div>
+            <div id="btnMove" title="Pan" onclick="IDRViewer.setSelectMode(1)" class="navBtn"></div>
+            <div id="btnZoomOut" title="Zoom Out" onclick="IDRViewer.zoomOut()" class="navBtn"></div>
+            <select id="zoomBtn" onchange="IDRViewer.zoomUpdate()">
+                <option value="0">100%</option>
+                <option value="1">Actual Size</option>
+                <option value="2">Fit Width</option>
+                <option value="3">Fit Height</option>
+                <option value="4">Fit Page</option>
+                <option value="5">Automatic</option>
+            </select>
+            <div id="btnZoomIn" title="Zoom In" onclick="IDRViewer.zoomIn()" class="navBtn"></div>
+            <div id="btnFullscreen" title="Fullscreen" onclick="IDRViewer.toggleFullScreen();" class="navBtn closed"></div>
+        </div>
+        <div id="mainContent">
+            <div id="contentContainer">
+                <div id="jpedal" style="position:relative; width: 1125px; height: 1125px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+                    <div id="t1_11" class="t s1_11"  onclick = "store();" routerLink="/sommarlovt" style="cursor:pointer;">Välj sida</div>
+                    <div id="t2_11" class="t s1_11"  onclick = "store();" routerLink="/main" style="cursor:pointer;">Välj kapitel</div>
+                    <div id="t3_11" class="t s1_11"  onclick = "store();" routerLink="/sommarlovet4" style="cursor:pointer;">Bokens övning</div>
+                    <div id="t4_11" class="t s1_11" onclick="var list = document.getElementsByTagName('form');for(var i = 0; i < list.length; i ++) {	var form = list.item(i);	form.reset();}" style="cursor:pointer;">Rensa textfält</div>
+                    <div id="t5_11" class="t s2_11">SPRÅKLÄRA</div>
+                    <div id="t6_11" class="t s3_11">Alfabetisk ordning</div>
+                    <div id="t7_11" class="t s4_11">Skriv orden i alfabetisk ordning.</div>
+                    <div id="t8_11" class="t s5_11">glad</div>
+                    <div id="t9_11" class="t s5_11">korv</div>
+                    <div id="ta_11" class="t s5_11">grön</div>
+                    <div id="tb_11" class="t s5_11">ledsen</div>
+                    <div id="tc_11" class="t s5_11">pasta</div>
+                    <div id="td_11" class="t s5_11">blå</div>
+                    <div id="te_11" class="t s5_11">arg</div>
+                    <div id="tf_11" class="t s5_11">bröd</div>
+                    <div id="tg_11" class="t s5_11">svart</div>
+                    <div id="th_11" class="t s5_11">sur</div>
+                    <div id="ti_11" class="t s5_11">sås</div>
+                    <div id="tj_11" class="t s5_11">röd</div>
+                    <div id="tk_11" class="t s6_11">SOMMARLOVET</div>
+                    <!-- End text definitions -->
+                    <!-- Begin Form Data -->
+                    <form>
+                        <input type="button" tabindex="5" id="form11_1" name="513 0 R" pdfFieldName="513 0 R"  onclick = "store();" routerLink="/sommarlovet3-1" style="cursor:pointer;" title="Alfabetet" />
+                        <input type="button" tabindex="2" id="form11_2" name="511 0 R" pdfFieldName="511 0 R"  onclick = "store();" routerLink="/sommarlovt" style="cursor:pointer;" title="Välj sida" />
+                        <input type="button" tabindex="1" id="form11_3" name="510 0 R" pdfFieldName="510 0 R"  onclick = "store();" routerLink="/main" style="cursor:pointer;" title="Välj kapitel" />
+                        <input type="button" tabindex="4" id="form11_4" name="1498 0 R" pdfFieldName="1498 0 R" onclick="var list = document.getElementsByTagName('form');
+for(var i = 0; i < list.length; i ++) {
+	var form = list.item(i);
+	form.reset();
+}" style="cursor:pointer;" />
+                        <input type="button" tabindex="3" id="form11_5" name="512 0 R" pdfFieldName="512 0 R" onclick = "store();" routerLink="/sommarlovet4" style="cursor:pointer;" title="Alfabetisk ordning"/>
+                        <input type="text" tabindex="6" maxlength="10" id="CL_SO_P11_T01" name="P11_T01" pdfFieldName="P11_T01" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="7" maxlength="10" id="CL_SO_P11_T02" name="P11_T02" pdfFieldName="P11_T02" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="8" maxlength="10" id="CL_SO_P11_T03" name="P11_T03" pdfFieldName="P11_T03" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="9" maxlength="10" id="CL_SO_P11_T04" name="P11_T04" pdfFieldName="P11_T04" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="10" maxlength="10" id="CL_SO_P11_T05" name="P11_T05" pdfFieldName="P11_T05" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="11" maxlength="10" id="CL_SO_P11_T06" name="P11_T06" pdfFieldName="P11_T06" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="12" maxlength="10" id="CL_SO_P11_T07" name="P11_T07" pdfFieldName="P11_T07" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="13" maxlength="10" id="CL_SO_P11_T08" name="P11_T08" pdfFieldName="P11_T08" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="14" maxlength="10" id="CL_SO_P11_T09" name="P11_T09" pdfFieldName="P11_T09" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="15" maxlength="10" id="CL_SO_P11_T10" name="P11_T10" pdfFieldName="P11_T10" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="16" maxlength="10" id="CL_SO_P11_T11" name="P11_T11" pdfFieldName="P11_T11" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="17" maxlength="10" id="CL_SO_P11_T12" name="P11_T12" pdfFieldName="P11_T12" onfocus="TrackInsightsTextBoxes(this)"/>
+                    </form>
+                    <!-- End Form Data -->
+                    <!-- Begin page background -->
+                    <div id="pg11Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+                    <div id="pg11">
+                        <object width="1125" height="1125" data="assets/Sommarlovet/11/11.svg" type="image/svg+xml" id="svgImage" style="width:1125px; height:1125px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object>
+                    </div>
+                    <!-- End page background -->
+                </div>
+            </div>
+        </div>
+    </div>    
+  <!--   <script src="../../assets/jquery.min.js"></script>
+    <script src="../../assets/app_clown.min.js" type="text/javascript"></script>
+    <script src="../../assets/IDRViewer.min.js" type="text/javascript"></script>
+    <script src="//rum-static.pingdom.net/pa-5aab4ff34c40770007000465.js" async></script> -->
+</body>
+
+</html>

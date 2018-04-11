@@ -1,0 +1,582 @@
+ .t {
+     position: absolute;
+     -webkit-transform-origin: top left;
+     -moz-transform-origin: top left;
+     -o-transform-origin: top left;
+     -ms-transform-origin: top left;
+     -webkit-transform: scale(0.25);
+     -moz-transform: scale(0.25);
+     -o-transform: scale(0.25);
+     -ms-transform: scale(0.25);
+     z-index: 2;
+     position: absolute;
+     white-space: nowrap;
+     overflow: visible;
+ }
+ 
+ #t1_5 {
+     left: 69px;
+     top: 197px;
+ }
+ 
+ #t2_5 {
+     left: 69px;
+     top: 250px;
+ }
+ 
+ #t3_5 {
+     left: 69px;
+     top: 144px;
+ }
+ 
+ #t4_5 {
+     left: 69px;
+     top: 303px;
+ }
+ 
+ #t5_5 {
+     left: 55px;
+     top: 83px;
+ }
+ 
+ #t6_5 {
+     left: 264px;
+     top: 37px;
+     letter-spacing: -3px;
+ }
+ 
+ #t7_5 {
+     left: 990px;
+     top: 1077px;
+     letter-spacing: 6px;
+ }
+ 
+ #t8_5 {
+     left: 264px;
+     top: 442px;
+     letter-spacing: 1px;
+ }
+ 
+ #t9_5 {
+     left: 298px;
+     top: 154px;
+     letter-spacing: 2px;
+ }
+ 
+ #ta_5 {
+     left: 569px;
+     top: 154px;
+     letter-spacing: 1px;
+ }
+ 
+ #tb_5 {
+     left: 287px;
+     top: 217px;
+     letter-spacing: 1px;
+ }
+ 
+ #tc_5 {
+     left: 620px;
+     top: 251px;
+     letter-spacing: 2px;
+ }
+ 
+ #td_5 {
+     left: 679px;
+     top: 172px;
+     letter-spacing: 2px;
+ }
+ 
+ #te_5 {
+     left: 520px;
+     top: 336px;
+     letter-spacing: 1px;
+ }
+ 
+ #tf_5 {
+     left: 786px;
+     top: 340px;
+     letter-spacing: 1px;
+ }
+ 
+ #tg_5 {
+     left: 724px;
+     top: 223px;
+     letter-spacing: 2px;
+ }
+ 
+ #th_5 {
+     left: 353px;
+     top: 338px;
+     letter-spacing: 2px;
+ }
+ 
+ #ti_5 {
+     left: 782px;
+     top: 143px;
+     letter-spacing: 1px;
+ }
+ 
+ #tj_5 {
+     left: 317px;
+     top: 277px;
+     letter-spacing: 2px;
+ }
+ 
+ #tk_5 {
+     left: 399px;
+     top: 219px;
+     letter-spacing: 1px;
+ }
+ 
+ #tl_5 {
+     left: 499px;
+     top: 205px;
+     letter-spacing: 2px;
+ }
+ 
+ #tm_5 {
+     left: 480px;
+     top: 278px;
+     letter-spacing: 1px;
+ }
+ 
+ #tn_5 {
+     left: 663px;
+     top: 303px;
+     letter-spacing: 1px;
+ }
+ 
+ #to_5 {
+     left: 427px;
+     top: 160px;
+     letter-spacing: 2px;
+ }
+ 
+ #tp_5 {
+     left: 340px;
+     top: 487px;
+     letter-spacing: 1px;
+ }
+ 
+ #tq_5 {
+     left: 436px;
+     top: 834px;
+     letter-spacing: 1px;
+ }
+ 
+ #tr_5 {
+     left: 803px;
+     top: 450px;
+     letter-spacing: 2px;
+ }
+ 
+ #ts_5 {
+     left: 849px;
+     top: 834px;
+     letter-spacing: 1px;
+ }
+ 
+ #tt_5 {
+     left: 945px;
+     top: 159px;
+     letter-spacing: 1px;
+ }
+ 
+ #tu_5 {
+     left: 945px;
+     top: 181px;
+     letter-spacing: 1px;
+ }
+ 
+ #tv_5 {
+     left: 945px;
+     top: 203px;
+ }
+ 
+ #tw_5 {
+     left: 949px;
+     top: 203px;
+     letter-spacing: 1px;
+ }
+ 
+ #tx_5 {
+     left: 960px;
+     top: 203px;
+ }
+ 
+ #ty_5 {
+     left: 971px;
+     top: 203px;
+     letter-spacing: 1px;
+ }
+ 
+ #tz_5 {
+     left: 982px;
+     top: 203px;
+     letter-spacing: 1px;
+ }
+ 
+ #t10_5 {
+     left: 945px;
+     top: 225px;
+     letter-spacing: 1px;
+ }
+ 
+ #t11_5 {
+     left: 960px;
+     top: 225px;
+     letter-spacing: 1px;
+ }
+ 
+ #t12_5 {
+     left: 971px;
+     top: 225px;
+     letter-spacing: 1px;
+ }
+ 
+ #t13_5 {
+     left: 987px;
+     top: 225px;
+     letter-spacing: 1px;
+ }
+ 
+ #form5_1 {
+     border-style: none;
+     z-index: 2;
+     position: absolute;
+     left: 72px;
+     top: 584px;
+     width: 31px;
+     height: 26px;
+     text-align: left;
+     background: transparent;
+     font: normal 19px Arial, Helvetica, sans-serif;
+ }
+ 
+ #form5_2 {
+     border-style: none;
+     z-index: 2;
+     position: absolute;
+     left: 113px;
+     top: 581px;
+     width: 35px;
+     height: 34px;
+     text-align: left;
+     background: transparent;
+     font: normal 25px Arial, Helvetica, sans-serif;
+ }
+ 
+ #form5_3 {
+     border-style: none;
+     z-index: 2;
+     position: absolute;
+     left: 60px;
+     top: 245px;
+     width: 127px;
+     height: 32px;
+     text-align: left;
+     background: transparent;
+     font: normal 24px Arial, Helvetica, sans-serif;
+ }
+ 
+ #form5_4 {
+     border-style: none;
+     z-index: 2;
+     position: absolute;
+     left: 58px;
+     top: 190px;
+     width: 132px;
+     height: 35px;
+     text-align: left;
+     background: transparent;
+     font: normal 27px Arial, Helvetica, sans-serif;
+ }
+ 
+ #form5_5 {
+     border-style: none;
+     z-index: 2;
+     position: absolute;
+     left: 55px;
+     top: 135px;
+     width: 136px;
+     height: 40px;
+     text-align: left;
+     background: transparent;
+     font: normal 30px Arial, Helvetica, sans-serif;
+ }
+ 
+ #form5_6 {
+     border-style: none;
+     z-index: 2;
+     position: absolute;
+     left: 51px;
+     top: 290px;
+     width: 141px;
+     height: 44px;
+     text-align: left;
+     background: transparent;
+     font: normal 35px Arial, Helvetica, sans-serif;
+ }
+ 
+ #CL_CI_P05_T01 {
+     z-index: 2;
+     position: absolute;
+     left: 340px;
+     top: 530px;
+     width: 215px;
+     height: 35px;
+     text-align: left;
+     background: transparent;
+     border-color: transparent;
+     font: normal 35px Arial, Helvetica, sans-serif;
+ }
+ 
+ #CL_CI_P05_T02 {
+     z-index: 2;
+     position: absolute;
+     left: 340px;
+     top: 572px;
+     width: 215px;
+     height: 35px;
+     text-align: left;
+     background: transparent;
+     border-color: transparent;
+     font: normal 35px Arial, Helvetica, sans-serif;
+ }
+ 
+ #CL_CI_P05_T03 {
+     z-index: 2;
+     position: absolute;
+     left: 340px;
+     top: 614px;
+     width: 215px;
+     height: 35px;
+     text-align: left;
+     background: transparent;
+     border-color: transparent;
+     font: normal 35px Arial, Helvetica, sans-serif;
+ }
+ 
+ #CL_CI_P05_T04 {
+     z-index: 2;
+     position: absolute;
+     left: 360px;
+     top: 656px;
+     width: 175px;
+     height: 35px;
+     text-align: left;
+     background: transparent;
+     border-color: transparent;
+     font: normal 35px Arial, Helvetica, sans-serif;
+ }
+ 
+ #CL_CI_P05_T05 {
+     z-index: 2;
+     position: absolute;
+     left: 732px;
+     top: 488px;
+     width: 162px;
+     height: 35px;
+     text-align: left;
+     background: transparent;
+     border-color: transparent;
+     font: normal 33px Arial, Helvetica, sans-serif;
+ }
+ 
+ #CL_CI_P05_T06 {
+     z-index: 2;
+     position: absolute;
+     left: 732px;
+     top: 532px;
+     width: 162px;
+     height: 35px;
+     text-align: left;
+     background: transparent;
+     border-color: transparent;
+     font: normal 35px Arial, Helvetica, sans-serif;
+ }
+ 
+ #CL_CI_P05_T07 {
+     z-index: 2;
+     position: absolute;
+     left: 732px;
+     top: 576px;
+     width: 162px;
+     height: 35px;
+     text-align: left;
+     background: transparent;
+     border-color: transparent;
+     font: normal 35px Arial, Helvetica, sans-serif;
+ }
+ 
+ #CL_CI_P05_T08 {
+     z-index: 2;
+     position: absolute;
+     left: 732px;
+     top: 620px;
+     width: 162px;
+     height: 35px;
+     text-align: left;
+     background: transparent;
+     border-color: transparent;
+     font: normal 33px Arial, Helvetica, sans-serif;
+ }
+ 
+ #CL_CI_P05_T09 {
+     z-index: 2;
+     position: absolute;
+     left: 732px;
+     top: 664px;
+     width: 162px;
+     height: 35px;
+     text-align: left;
+     background: transparent;
+     border-color: transparent;
+     font: normal 35px Arial, Helvetica, sans-serif;
+ }
+ 
+ #CL_CI_P05_T10 {
+     z-index: 2;
+     position: absolute;
+     left: 732px;
+     top: 708px;
+     width: 162px;
+     height: 35px;
+     text-align: left;
+     background: transparent;
+     border-color: transparent;
+     font: normal 35px Arial, Helvetica, sans-serif;
+ }
+ 
+ #CL_CI_P05_T11 {
+     z-index: 2;
+     position: absolute;
+     left: 340px;
+     top: 877px;
+     width: 216px;
+     height: 35px;
+     text-align: left;
+     background: transparent;
+     border-color: transparent;
+     font: normal 33px Arial, Helvetica, sans-serif;
+ }
+ 
+ #CL_CI_P05_T12 {
+     z-index: 2;
+     position: absolute;
+     left: 340px;
+     top: 920px;
+     width: 216px;
+     height: 35px;
+     text-align: left;
+     background: transparent;
+     border-color: transparent;
+     font: normal 35px Arial, Helvetica, sans-serif;
+ }
+ 
+ #CL_CI_P05_T13 {
+     z-index: 2;
+     position: absolute;
+     left: 340px;
+     top: 963px;
+     width: 216px;
+     height: 35px;
+     text-align: left;
+     background: transparent;
+     border-color: transparent;
+     font: normal 35px Arial, Helvetica, sans-serif;
+ }
+ 
+ #CL_CI_P05_T14 {
+     z-index: 2;
+     position: absolute;
+     left: 757px;
+     top: 877px;
+     width: 217px;
+     height: 35px;
+     text-align: left;
+     background: transparent;
+     border-color: transparent;
+     font: normal 33px Arial, Helvetica, sans-serif;
+ }
+ 
+ #CL_CI_P05_T15 {
+     z-index: 2;
+     position: absolute;
+     left: 757px;
+     top: 920px;
+     width: 217px;
+     height: 35px;
+     text-align: left;
+     background: transparent;
+     border-color: transparent;
+     font: normal 35px Arial, Helvetica, sans-serif;
+ }
+ 
+ #CL_CI_P05_T16 {
+     z-index: 2;
+     position: absolute;
+     left: 757px;
+     top: 963px;
+     width: 217px;
+     height: 35px;
+     text-align: left;
+     background: transparent;
+     border-color: transparent;
+     font: normal 35px Arial, Helvetica, sans-serif;
+ }
+ 
+ #t14_5 {
+     left: 998px;
+     top: 225px;
+     letter-spacing: 1px;
+ }
+ 
+ .s2_5 {
+     FONT-SIZE: 85px;
+     FONT-FAMILY: DonSemiformal;
+     color: rgb(255, 255, 255);
+ }
+ 
+ .s8_5 {
+     FONT-SIZE: 73px;
+     FONT-FAMILY: HelveticaNeue-Medium;
+     color: rgb(0, 0, 0);
+ }
+ 
+ .s1_5 {
+     FONT-SIZE: 55px;
+     FONT-FAMILY: Gotham-Medium;
+     color: rgb(0, 0, 0);
+ }
+ 
+ .s7_5 {
+     FONT-SIZE: 85px;
+     FONT-FAMILY: HelveticaNeue-Medium;
+     color: rgb(0, 0, 0);
+ }
+ 
+ .s4_5 {
+     FONT-SIZE: 48px;
+     FONT-FAMILY: HelveticaNeue-Light;
+     color: rgb(0, 0, 0);
+ }
+ 
+ .s3_5 {
+     FONT-SIZE: 244px;
+     FONT-FAMILY: DonSemiformal;
+     color: rgb(214, 58, 142);
+ }
+ 
+ .s6_5 {
+     FONT-SIZE: 183px;
+     FONT-FAMILY: MajemaSkol;
+     color: rgb(0, 0, 0);
+ }
+ 
+ .s5_5 {
+     FONT-SIZE: 73px;
+     FONT-FAMILY: HelveticaNeue-Light;
+     color: rgb(0, 0, 0);
+ }

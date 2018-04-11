@@ -1,0 +1,114 @@
+<!DOCTYPE html >
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Halloween</title>
+<!--     <script src="../../assets/dom-extensions.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="../../assets/app.min.css">
+    <link rel="stylesheet" type="text/css" href="11/11.min.css"> -->
+</head>
+
+<body>
+    <div id="hide"></div>
+    <div id="left">
+        <div id="leftNav">
+            <div id="btnThumbnails" onclick="IDRViewer.toggleOutlines(false)" title="Thumbnails" class="navBtn inactive"></div>
+            <div id="btnOutlines" onclick="IDRViewer.toggleOutlines(true)" title="Bookmarks" class="navBtn inactive"></div>
+        </div>
+        <div id="leftContent">
+            <!-- <div id="thumbnailPanel"></div> -->
+            <div id="outlinePanel"></div>
+        </div>
+    </div>
+    <div id="main">
+        <div id="mainNav">
+            <div id="btnSideToggle" onclick="IDRViewer.toggleThumbnails();" class="navBtn">
+                <div title="Sidebar"></div>
+            </div>
+            <div id="btnPrev" title="Previous Page" onclick="IDRViewer.prev()" class="navBtn"></div>
+            <select id="goBtn" onchange="IDRViewer.goToPage(0)">
+            </select>
+            <span id="pgCount"></span>
+            <div id="btnNext" title="Next Page" onclick="IDRViewer.next()" class="navBtn"></div>
+            <div id="btnSelect" title="Select" onclick="IDRViewer.setSelectMode(0)" class="navBtn"></div>
+            <div id="btnMove" title="Pan" onclick="IDRViewer.setSelectMode(1)" class="navBtn"></div>
+            <div id="btnZoomOut" title="Zoom Out" onclick="IDRViewer.zoomOut()" class="navBtn"></div>
+            <select id="zoomBtn" onchange="IDRViewer.zoomUpdate()">
+                <option value="0">100%</option>
+                <option value="1">Actual Size</option>
+                <option value="2">Fit Width</option>
+                <option value="3">Fit Height</option>
+                <option value="4">Fit Page</option>
+                <option value="5">Automatic</option>
+            </select>
+            <div id="btnZoomIn" title="Zoom In" onclick="IDRViewer.zoomIn()" class="navBtn"></div>
+            <div id="btnFullscreen" title="Fullscreen" onclick="IDRViewer.toggleFullScreen();" class="navBtn closed"></div>
+        </div>
+        <div id="mainContent">
+            <div id="contentContainer">
+                <div id="jpedal" style="position:relative; width: 1125px; height: 1125px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+                    <div id="t1_11" class="t s1_11" onclick = "store();" routerLink = "/halloween" style="cursor:pointer;">Välj sida</div>
+                    <div id="t2_11" class="t s1_11" onclick = "store();" routerLink = "/main"  style="cursor:pointer;">Välj kapitel</div>
+                    <div id="t3_11" class="t s1_11" onclick = "store();" routerLink = "/sammansatta-ord" style="cursor:pointer;">Bokens övning</div>
+                    <div id="t4_11" class="t s1_11" onclick="var list = document.getElementsByTagName('form');for(var i = 0; i < list.length; i ++) {	var form = list.item(i);	form.reset();}" style="cursor:pointer;">Rensa textfält</div>
+                    <div id="t5_11" class="t s2_11">SPRÅKLÄRA</div>
+                    <div id="t6_11" class="t s3_11">läsa<span id="t7_11" class="s4_11"> + </span><span id="t8_11" class="s3_11">lampa</span><span id="t9_11" class="s4_11"> = </span></div>
+                    <div id="ta_11" class="t s3_11">penna<span id="tb_11" class="s4_11"> + </span><span id="tc_11" class="s3_11">fodral</span><span id="td_11" class="s4_11"> = </span></div>
+                    <div id="te_11" class="t s3_11">hus<span id="tf_11" class="s4_11"> + </span><span id="tg_11" class="s3_11">bil</span><span id="th_11" class="s4_11"> = </span></div>
+                    <div id="ti_11" class="t s3_11">vinter<span id="tj_11" class="s4_11"> + </span><span id="tk_11" class="s3_11">jacka</span><span id="tl_11" class="s4_11"> = </span></div>
+                    <div id="tm_11" class="t s3_11">häng<span id="tn_11" class="s4_11"> + </span><span id="to_11" class="s3_11">matta</span><span id="tp_11" class="s4_11"> = </span></div>
+                    <div id="tq_11" class="t s3_11">dag<span id="tr_11" class="s4_11"> + </span><span id="ts_11" class="s3_11">bok</span><span id="tt_11" class="s4_11"> = </span></div>
+                    <div id="tu_11" class="t s3_11">båt<span id="tv_11" class="s4_11"> + </span><span id="tw_11" class="s3_11">hake</span><span id="tx_11" class="s4_11"> = </span></div>
+                    <div id="ty_11" class="t s3_11">skog<span id="tz_11" class="s4_11"> + </span><span id="t10_11" class="s3_11">väg</span><span id="t11_11" class="s4_11"> = </span></div>
+                    <div id="t12_11" class="t s4_11">Ibland måste man ta bort eller lägga till en bokstav.</div>
+                    <div id="t13_11" class="t s4_11">Skriv sammansatta ord.</div>
+                    <div id="t14_11" class="t s4_11">Skriv sammansatta ord.</div>
+                    <div id="t15_11" class="t s5_11">Sammansatta ord</div>
+                    <div id="t16_11" class="t s3_11">fick<span id="t17_11" class="s6_11">a</span><span id="t18_11" class="s4_11"> + </span><span id="t19_11" class="s3_11">lampa</span><span id="t1a_11" class="s4_11"> = </span><span id="t1b_11" class="s3_11">ficklampa</span></div>
+                    <div id="t1c_11" class="t s3_11">papper<span id="t1d_11" class="s4_11"> + </span><span id="t1e_11" class="s3_11">korg</span><span id="t1f_11" class="s4_11"> = </span><span id="t1g_11" class="s3_11">papper<span class="s6_11">s</span>korg</span>
+                    </div>
+                    <div id="t1j_11" class="t s4_11">Sätt samman två eller</div>
+                    <div id="t1k_11" class="t s4_11">ﬂera ord så blir det ett</div>
+                    <div id="t1l_11" class="t s4_11"><span class="s7_11">sammansatt</span> ord.</div>
+                    <div id="t1n_11" class="t s4_11">glas + ögon = glasögon</div>
+                    <div id="t1o_11" class="t s8_11">HALLOWEEN</div>
+                    <!-- End text definitions -->
+                    <!-- Begin Form Data -->
+                    <form>
+                        <input type="button" tabindex="5" id="form11_1" name="464 0 R" pdfFieldName="464 0 R" onclick = "store();" routerLink = "/substantiv1" style="cursor:pointer;" title="Substantiv" />
+                        <input type="button" tabindex="2" id="form11_2" name="462 0 R" pdfFieldName="462 0 R" onclick = "store();" routerLink = "/halloween" style="cursor:pointer;" title="Välj sida" />
+                        <input type="button" tabindex="3" id="form11_3" name="463 0 R" pdfFieldName="463 0 R" onclick = "store();" routerLink = "/sammansatta-ord" style="cursor:pointer;" title="Sammansatta ord" />
+                        <input type="button" tabindex="4" id="form11_4" name="1442 0 R" pdfFieldName="1442 0 R" onclick="var list = document.getElementsByTagName('form');
+for(var i = 0; i < list.length; i ++) {
+	var form = list.item(i);
+	form.reset();
+}" style="cursor:pointer;" />
+                        <input type="button" tabindex="1" id="form11_5" name="461 0 R" pdfFieldName="461 0 R" onclick = "store();" routerLink = "/main" style="cursor:pointer;" title="Välj kapitel" />
+                        <input type="text" tabindex="10" maxlength="10" id="CL_HA_P11_T05" name="P11_T05" pdfFieldName="P11_T05" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="11" maxlength="10" id="CL_HA_P11_T06" name="P11_T06" pdfFieldName="P11_T06" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="12" maxlength="10" id="CL_HA_P11_T07" name="P11_T07" pdfFieldName="P11_T07" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="13" maxlength="10" id="CL_HA_P11_T08" name="P11_T08" pdfFieldName="P11_T08" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="6" maxlength="20" id="CL_HA_P11_T01" name="P11_T01" pdfFieldName="P11_T01" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="7" maxlength="20" id="CL_HA_P11_T02" name="P11_T02" pdfFieldName="P11_T02" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="8" maxlength="20" id="CL_HA_P11_T03" name="P11_T03" pdfFieldName="P11_T03" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="9" maxlength="20" id="CL_HA_P11_T04" name="P11_T04" pdfFieldName="P11_T04" onfocus="TrackInsightsTextBoxes(this)"/>
+                    </form>
+                    <!-- End Form Data -->
+                    <!-- Begin page background -->
+                    <div id="pg11Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+                    <div id="pg11">
+                        <object width="1125" height="1125" data="assets/Halloween/11/11.svg" type="image/svg+xml" id="svgImage" style="width:1125px; height:1125px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--     <script src="../../assets/jquery.min.js"></script>
+    <script src="../../assets/app_clown.min.js" type="text/javascript"></script>
+    <script src="../../assets/IDRViewer.min.js" type="text/javascript"></script>
+    <script src="//rum-static.pingdom.net/pa-5aab4ff34c40770007000465.js" async></script> -->
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html >
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Skatten</title>
+<!--     <script src="../../assets/dom-extensions.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="../../assets/app.min.css">
+    <link rel="stylesheet" type="text/css" href="03/3.min.css"> -->
+</head>
+
+<body>
+    <div id="hide"></div>
+    <div id="left">
+        <div id="leftNav">
+            <div id="btnThumbnails" onclick="IDRViewer.toggleOutlines(false)" title="Thumbnails" class="navBtn inactive"></div>
+            <div id="btnOutlines" onclick="IDRViewer.toggleOutlines(true)" title="Bookmarks" class="navBtn inactive"></div>
+        </div>
+        <div id="leftContent">
+            <!-- <div id="thumbnailPanel"></div> -->
+            <div id="outlinePanel"></div>
+        </div>
+    </div>
+    <div id="main">
+        <div id="mainNav">
+            <div id="btnSideToggle" onclick="IDRViewer.toggleThumbnails();" class="navBtn">
+                <div title="Sidebar"></div>
+            </div>
+            <div id="btnPrev" title="Previous Page" onclick="IDRViewer.prev()" class="navBtn"></div>
+            <select id="goBtn" onchange="IDRViewer.goToPage(0)">
+            </select>
+            <span id="pgCount"></span>
+            <div id="btnNext" title="Next Page" onclick="IDRViewer.next()" class="navBtn"></div>
+            <div id="btnSelect" title="Select" onclick="IDRViewer.setSelectMode(0)" class="navBtn"></div>
+            <div id="btnMove" title="Pan" onclick="IDRViewer.setSelectMode(1)" class="navBtn"></div>
+            <div id="btnZoomOut" title="Zoom Out" onclick="IDRViewer.zoomOut()" class="navBtn"></div>
+            <select id="zoomBtn" onchange="IDRViewer.zoomUpdate()">
+                <option value="0">100%</option>
+                <option value="1">Actual Size</option>
+                <option value="2">Fit Width</option>
+                <option value="3">Fit Height</option>
+                <option value="4">Fit Page</option>
+                <option value="5">Automatic</option>
+            </select>
+            <div id="btnZoomIn" title="Zoom In" onclick="IDRViewer.zoomIn()" class="navBtn"></div>
+            <div id="btnFullscreen" title="Fullscreen" onclick="IDRViewer.toggleFullScreen();" class="navBtn closed"></div>
+        </div>
+        <div id="mainContent">
+            <div id="contentContainer">
+                <div id="jpedal" style="position:relative; width: 1125px; height: 1125px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+                    <div id="t1_3" class="t s1_3" onclick = "store();" routerLink ="/skatten" style="cursor:pointer;">Välj sida</div>
+                    <div id="t2_3" class="t s1_3" onclick = "store();" routerLink ="/main" style="cursor:pointer;">Välj kapitel</div>
+                    <div id="t3_3" class="t s1_3" onclick="var list = document.getElementsByTagName('form');for(var i = 0; i < list.length; i ++) {	var form = list.item(i);	form.reset();}" style="cursor:pointer;">Rensa textfält</div>
+                    <div id="t4_3" class="t s2_3">ORDKUNSKAP</div>
+                    <div id="t5_3" class="t s3_3">SKATTEN</div>
+                    <div id="t6_3" class="t s4_3">Gör en tankekarta.</div>
+                    <div id="t7_3" class="t s4_3">Skriv meningar. Använd orden i tankekartan.</div>
+                    <div id="t8_3" class="t s4_3">Läs dina meningar för en kamrat.</div>
+                    <div id="t9_3" class="t s5_3">SKATTEN</div>
+                    <!-- End text definitions -->
+                    <!-- Begin Form Data -->
+                    <form>
+                        <input type="button" tabindex="4" id="form3_1" name="343 0 R" pdfFieldName="343 0 R" onclick = "store();" routerLink ="/istallet-for-sen-sa" style="cursor:pointer;" title='Istället för "sen så"' />
+                        <input type="button" tabindex="2" id="form3_2" name="342 0 R" pdfFieldName="342 0 R" onclick = "store();" routerLink ="/skatten" style="cursor:pointer;" title="Välj sida" />
+                        <input type="button" tabindex="1" id="form3_3" name="341 0 R" pdfFieldName="341 0 R" onclick = "store();" routerLink ="/main" style="cursor:pointer;" title="Välj kapitel" />
+                        <input type="button" tabindex="3" id="form3_4" name="1414 0 R" pdfFieldName="1414 0 R" onclick="var list = document.getElementsByTagName('form');
+for(var i = 0; i < list.length; i ++) {
+	var form = list.item(i);
+	form.reset();
+}" style="cursor:pointer;" />
+                        <input type="text" tabindex="5" maxlength="12" id="CL_SK_P03_T01" name="P03_T01" pdfFieldName="P03_T01" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="6" maxlength="12" id="CL_SK_P03_T02" name="P03_T02" pdfFieldName="P03_T02" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="7" maxlength="12" id="CL_SK_P03_T03" name="P03_T03" pdfFieldName="P03_T03" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="8" maxlength="12" id="CL_SK_P03_T04" name="P03_T04" pdfFieldName="P03_T04" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="9" maxlength="12" id="CL_SK_P03_T05" name="P03_T05" pdfFieldName="P03_T05" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="10" maxlength="12" id="CL_SK_P03_T06" name="P03_T06" pdfFieldName="P03_T06" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="11" maxlength="12" id="CL_SK_P03_T07" name="P03_T07" pdfFieldName="P03_T07" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="12" maxlength="12" id="CL_SK_P03_T08" name="P03_T08" pdfFieldName="P03_T08" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="13" maxlength="12" id="CL_SK_P03_T09" name="P03_T09" pdfFieldName="P03_T09" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="14" maxlength="12" id="CL_SK_P03_T10" name="P03_T10" pdfFieldName="P03_T10" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <textarea tabindex="15" id="CL_SK_P03_T11" name="P03_T11" pdfFieldName="P03_T11" onfocus="TrackInsightsTextBoxes(this)"></textarea>
+                    </form>
+                    <!-- End Form Data -->
+                    <!-- Begin page background -->
+                    <div id="pg3Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+                    <div id="pg3">
+                        <object width="1125" height="1125" data="assets/Skatten/03/3.svg" type="image/svg+xml" id="svgImage" style="width:1125px; height:1125px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object>
+                    </div>
+                    <!-- End page background -->
+                </div>
+            </div>
+        </div>
+    </div>    
+<!--     <script src="../../assets/jquery.min.js"></script>
+    <script src="../../assets/app_clown.min.js" type="text/javascript"></script>
+    <script src="../../assets/IDRViewer.min.js" type="text/javascript"></script>
+    <script src="//rum-static.pingdom.net/pa-5aab4ff34c40770007000465.js" async></script> -->
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html >
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Språkskrinet - Clown</title>
+    <script src="../../assets/dom-extensions.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="../../assets/app.min.css">
+    <link rel="stylesheet" type="text/css" href="../index/index.min.css">
+</head>
+
+<body>
+    <div id="hide"></div>
+    <div id="left">
+        <div id="leftNav">
+            <div id="btnThumbnails" onclick="IDRViewer.toggleOutlines(false)" title="Thumbnails" class="navBtn inactive"></div>
+            <div id="btnOutlines" onclick="IDRViewer.toggleOutlines(true)" title="Bookmarks" class="navBtn inactive"></div>
+        </div>
+        <div id="leftContent">
+            <!-- <div id="thumbnailPanel"></div> -->
+            <div id="outlinePanel"></div>
+        </div>
+    </div>
+    <div id="main">
+        <div id="mainNav">
+            <div id="btnSideToggle" onclick="IDRViewer.toggleThumbnails();" class="navBtn">
+                <div title="Sidebar"></div>
+            </div>
+            <div id="btnPrev" title="Previous Page" onclick="IDRViewer.prev()" class="navBtn"></div>
+            <select id="goBtn" onchange="IDRViewer.goToPage(0)">
+            </select>
+            <span id="pgCount"></span>
+            <div id="btnNext" title="Next Page" onclick="IDRViewer.next()" class="navBtn"></div>
+            <div id="btnSelect" title="Select" onclick="IDRViewer.setSelectMode(0)" class="navBtn"></div>
+            <div id="btnMove" title="Pan" onclick="IDRViewer.setSelectMode(1)" class="navBtn"></div>
+            <div id="btnZoomOut" title="Zoom Out" onclick="IDRViewer.zoomOut()" class="navBtn"></div>
+            <select id="zoomBtn" onchange="IDRViewer.zoomUpdate()">
+                <option value="0">100%</option>
+                <option value="1">Actual Size</option>
+                <option value="2">Fit Width</option>
+                <option value="3">Fit Height</option>
+                <option value="4">Fit Page</option>
+                <option value="5">Automatic</option>
+            </select>
+            <div id="btnZoomIn" title="Zoom In" onclick="IDRViewer.zoomIn()" class="navBtn"></div>
+            <div id="btnFullscreen" title="Fullscreen" onclick="IDRViewer.toggleFullScreen();" class="navBtn closed"></div>
+        </div>
+        <div id="mainContent">
+            <div id="contentContainer">
+                <div id="jpedal" style="position:relative; width: 1125px; height: 1125px; overflow: hidden; margin: 0 auto; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);">
+                    <div id="t1_1" class="t s1_1" onclick="location.href='../Sommarlovet/Valj_sida.html'" style="cursor:pointer;">SOMMARLOVET</div>
+                    <div id="t2_1" class="t s1_1" onclick="location.href='../Halloween/Valj_sida.html'" style="cursor:pointer;">HALLOWEEN</div>
+                    <div id="t3_1" class="t s1_1" onclick="location.href='../Djur/Valj_sida.html'" style="cursor:pointer;">DJUR</div>
+                    <div id="t4_1" class="t s1_1" onclick="location.href='../Rasten/Valj_sida.html'" style="cursor:pointer;">RASTEN</div>
+                    <div id="t5_1" class="t s1_1" onclick="location.href='../Staden/Valj_sida.html'" style="cursor:pointer;">STADEN</div>
+                    <div id="t6_1" class="t s1_1" onclick="location.href='../Simhallen/Valj_sida.html'" style="cursor:pointer;">SIMHALLEN</div>
+                    <div id="t7_1" class="t s1_1" onclick="location.href='../Skatten/Valj_sida.html'" style="cursor:pointer;">SKATTEN</div>
+                    <div id="t8_1" class="t s1_1" onclick="location.href='../Vinter/Valj_sida.html'" style="cursor:pointer;">VINTER</div>
+                    <div id="t9_1" class="t s1_1" onclick="location.href='../Cirkus/Valj_sida.html'" style="cursor:pointer;">CIRKUS</div>
+                    <div id="ta_1" class="t s2_1">VÄLJ KAPITEL</div>
+                    <!-- End text definitions -->
+                    <!-- Begin Form Data -->
+                    <form>
+                        <input type="button" tabindex="9" id="form1_1" name="1003 0 R" pdfFieldName="1003 0 R" onclick="location.href='../Cirkus/Valj_sida.html'" style="cursor:pointer;" title="Välj sida" />
+                        <input type="button" tabindex="8" id="form1_2" name="720 0 R" pdfFieldName="720 0 R" onclick="location.href='../Simhallen/Valj_sida.html'" style="cursor:pointer;" title="Välj sida" />
+                        <input type="button" tabindex="7" id="form1_3" name="720 0 R" pdfFieldName="720 0 R" onclick="location.href='../Djur/Valj_sida.html'" style="cursor:pointer;" title="Välj sida" />
+                        <input type="button" tabindex="6" id="form1_4" name="720 0 R" pdfFieldName="720 0 R" onclick="location.href='../Vinter/Valj_sida.html'" style="cursor:pointer;" title="Välj sida" />
+                        <input type="button" tabindex="5" id="form1_5" name="720 0 R" pdfFieldName="720 0 R" onclick="location.href='../Staden/Valj_sida.html'" style="cursor:pointer;" title="Välj sida" />
+                        <input type="button" tabindex="4" id="form1_6" name="720 0 R" pdfFieldName="720 0 R" onclick="location.href='../Halloween/Valj_sida.html'" style="cursor:pointer;" title="Välj sida" />
+                        <input type="button" tabindex="3" id="form1_7" name="720 0 R" pdfFieldName="720 0 R" onclick="location.href='../Skatten/Valj_sida.html'" style="cursor:pointer;" title="Välj sida" />
+                        <input type="button" tabindex="2" id="form1_8" name="720 0 R" pdfFieldName="720 0 R" onclick="location.href='../Rasten/Valj_sida.html'" style="cursor:pointer;" title="Välj sida" />
+                        <input type="button" tabindex="1" id="form1_9" name="720 0 R" pdfFieldName="720 0 R" onclick="location.href='../Sommarlovet/Valj_sida.html'" style="cursor:pointer;" title="Välj sida" />
+                    </form>
+                    <!-- End Form Data -->
+                    <!-- Begin page background -->
+                    <div id="pg1Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+                    <div id="pg1">
+                        <object width="1125" height="1125" data="../index/1.svg" type="image/svg+xml" id="svgImage" style="width:1125px; height:1125px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../assets/jquery.min.js"></script>
+    <script src="../../assets/app_clown.min.js" type="text/javascript"></script>
+    <script src="../../assets/IDRViewer.min.js" type="text/javascript"></script>
+    <script src="//rum-static.pingdom.net/pa-5aab4ff34c40770007000465.js" async></script>
+</body>
+
+</html>
